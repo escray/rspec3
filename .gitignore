@@ -1,4 +1,5 @@
 book-code/
+expense_tracker/db/*.db
 *.gem
 *.rbc
 /.config

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'rack/test'
 require 'json'
 require_relative '../../app/api'
@@ -19,7 +21,7 @@ module ExpenseTracker
       expense.merge('id' => parsed['expense_id'])
     end
 
-    it "record submitted expenses" do
+    it 'record submitted expenses' do
       pending 'Need to persist expenses'
       coffee = post_expense(
         'payee' => 'Starbucks',

@@ -1,10 +1,10 @@
+# frozen_string_literal: true
+
 require_relative '../../../app/api'
 require 'rack/test'
-
 module ExpenseTracker
   RecordResult = Struct.new(:success?, :expense_id, :error_message)
   Record = Struct.new(:date, :count)
-
 
   RSpec.describe API do
     include Rack::Test::Methods
@@ -13,10 +13,10 @@ module ExpenseTracker
       API.new(ledger: ledger)
     end
 
-    let(:ledger) { instance_double('ExpenseTracker::Ledger')}
+    let(:ledger) { instance_double('ExpenseTracker::Ledger') }
 
     describe 'POST /expenses' do
-      let(:expense) { {'some' => 'data' } }
+      let(:expense) { { 'some' => 'data' } }
       before do
         allow(ledger).to receive(:record)
           .with(expense)
@@ -36,7 +36,7 @@ module ExpenseTracker
         end
       end
       context 'when the expense fails validateion' do
-        let(:expense) {{'some' => 'data'}}
+        let(:expense) { { 'some' => 'data' } }
         before do
           allow(ledger).to receive(:record)
             .with(expense)
@@ -60,12 +60,12 @@ module ExpenseTracker
         before do
           allow(ledger).to receive(:expenses_on)
             .with('2017-06-12')
-            .and_return(['expense_1', 'expense_2'])
+            .and_return(%w[expense_1 expense_2])
         end
         it 'returns the expense records as JSON' do
           get '/expenses/2017-06-12'
           parsed = JSON.parse(last_response.body)
-          expect(parsed).to eq(['expense_1', 'expense_2'])
+          expect(parsed).to eq(%w[expense_1 expense_2])
         end
 
         it 'responds with a 200 (OK)' do
@@ -89,7 +89,6 @@ module ExpenseTracker
           get 'expenses/2017-06-12'
           expect(last_response.status).to eq(200)
         end
-
       end
     end
   end
