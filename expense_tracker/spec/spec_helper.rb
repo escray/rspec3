@@ -20,6 +20,16 @@ RSpec.configure do |config|
   config.when_first_matching_example_defined(:db) do
     require_relative 'support/db'
   end
+  require 'logger'
+
+  config.before(:example) do |example|
+    DB.loggers << Logger.new('log/sequel.log')
+    DB.log_info("Starting example: #{example.metadata[:full_description]}")
+  end
+  config.after(:example) do |example|
+    DB.loggers << Logger.new('log/sequel.log')
+    DB.log_info("Edning example: #{example.metadata[:full_description]}")
+  end
   config.alias_example_group_to :pdescribe, pry: true
   config.alias_example_to :pit, pry: true
   config.after(:example, pry: true) do |ex|

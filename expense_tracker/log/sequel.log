@@ -1,0 +1,714 @@
+I, [2020-03-17T17:11:39.760987 #9745]  INFO -- : (0.000124s) SELECT sqlite_version()
+I, [2020-03-17T17:11:39.761260 #9745]  INFO -- : (0.000066s) CREATE TABLE IF NOT EXISTS `schema_info` (`version` integer DEFAULT (0) NOT NULL)
+I, [2020-03-17T17:11:39.761452 #9745]  INFO -- : (0.000092s) SELECT * FROM `schema_info` LIMIT 1
+I, [2020-03-17T17:11:39.761675 #9745]  INFO -- : (0.000065s) SELECT 1 AS 'one' FROM `schema_info` LIMIT 1
+I, [2020-03-17T17:11:39.761849 #9745]  INFO -- : (0.000068s) SELECT count(*) AS 'count' FROM `schema_info` LIMIT 1
+I, [2020-03-17T17:11:39.762011 #9745]  INFO -- : (0.000065s) SELECT `version` FROM `schema_info` LIMIT 1
+I, [2020-03-17T17:11:39.763683 #9745]  INFO -- : (0.001530s) DELETE FROM `expenses`
+I, [2020-03-17T17:11:39.765548 #9745]  INFO -- : (0.000035s) BEGIN
+I, [2020-03-17T17:11:39.765790 #9745]  INFO -- : Starting example: ExpenseTracker::Ledger#expenses_on returns a blank array when there are no matching expenses
+I, [2020-03-17T17:11:39.765823 #9745]  INFO -- : Starting example: ExpenseTracker::Ledger#expenses_on returns a blank array when there are no matching expenses
+I, [2020-03-17T17:11:39.766096 #9745]  INFO -- : (0.000117s) SELECT * FROM `expenses` WHERE (`date` = '2017-06-10')
+I, [2020-03-17T17:11:39.766121 #9745]  INFO -- : (0.000117s) SELECT * FROM `expenses` WHERE (`date` = '2017-06-10')
+I, [2020-03-17T17:11:39.766869 #9745]  INFO -- : Edning example: ExpenseTracker::Ledger#expenses_on returns a blank array when there are no matching expenses
+I, [2020-03-17T17:11:39.766900 #9745]  INFO -- : Edning example: ExpenseTracker::Ledger#expenses_on returns a blank array when there are no matching expenses
+I, [2020-03-17T17:11:39.766918 #9745]  INFO -- : Edning example: ExpenseTracker::Ledger#expenses_on returns a blank array when there are no matching expenses
+I, [2020-03-17T17:11:39.766997 #9745]  INFO -- : (0.000023s) ROLLBACK
+I, [2020-03-17T17:11:39.767019 #9745]  INFO -- : (0.000023s) ROLLBACK
+I, [2020-03-17T17:11:39.767034 #9745]  INFO -- : (0.000023s) ROLLBACK
+I, [2020-03-17T17:11:39.767533 #9745]  INFO -- : (0.000064s) BEGIN
+I, [2020-03-17T17:11:39.767562 #9745]  INFO -- : (0.000064s) BEGIN
+I, [2020-03-17T17:11:39.767578 #9745]  INFO -- : (0.000064s) BEGIN
+I, [2020-03-17T17:11:39.767671 #9745]  INFO -- : Starting example: ExpenseTracker::Ledger#expenses_on return all expenses for the provided date
+I, [2020-03-17T17:11:39.767696 #9745]  INFO -- : Starting example: ExpenseTracker::Ledger#expenses_on return all expenses for the provided date
+I, [2020-03-17T17:11:39.767711 #9745]  INFO -- : Starting example: ExpenseTracker::Ledger#expenses_on return all expenses for the provided date
+I, [2020-03-17T17:11:39.767724 #9745]  INFO -- : Starting example: ExpenseTracker::Ledger#expenses_on return all expenses for the provided date
+I, [2020-03-17T17:11:39.768167 #9745]  INFO -- : (0.000313s) INSERT INTO `expenses` (`payee`, `amount`, `date`) VALUES ('Starbucks', 5.75, '2017-06-10')
+I, [2020-03-17T17:11:39.768194 #9745]  INFO -- : (0.000313s) INSERT INTO `expenses` (`payee`, `amount`, `date`) VALUES ('Starbucks', 5.75, '2017-06-10')
+I, [2020-03-17T17:11:39.768210 #9745]  INFO -- : (0.000313s) INSERT INTO `expenses` (`payee`, `amount`, `date`) VALUES ('Starbucks', 5.75, '2017-06-10')
+I, [2020-03-17T17:11:39.768223 #9745]  INFO -- : (0.000313s) INSERT INTO `expenses` (`payee`, `amount`, `date`) VALUES ('Starbucks', 5.75, '2017-06-10')
+I, [2020-03-17T17:11:39.768467 #9745]  INFO -- : (0.000060s) SELECT max(`id`) AS 'max' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.768500 #9745]  INFO -- : (0.000060s) SELECT max(`id`) AS 'max' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.768517 #9745]  INFO -- : (0.000060s) SELECT max(`id`) AS 'max' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.768561 #9745]  INFO -- : (0.000060s) SELECT max(`id`) AS 'max' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.768663 #9745]  INFO -- : (0.000027s) INSERT INTO `expenses` (`payee`, `amount`, `date`) VALUES ('Starbucks', 5.75, '2017-06-10')
+I, [2020-03-17T17:11:39.768713 #9745]  INFO -- : (0.000027s) INSERT INTO `expenses` (`payee`, `amount`, `date`) VALUES ('Starbucks', 5.75, '2017-06-10')
+I, [2020-03-17T17:11:39.768747 #9745]  INFO -- : (0.000027s) INSERT INTO `expenses` (`payee`, `amount`, `date`) VALUES ('Starbucks', 5.75, '2017-06-10')
+I, [2020-03-17T17:11:39.768764 #9745]  INFO -- : (0.000027s) INSERT INTO `expenses` (`payee`, `amount`, `date`) VALUES ('Starbucks', 5.75, '2017-06-10')
+I, [2020-03-17T17:11:39.768922 #9745]  INFO -- : (0.000042s) SELECT max(`id`) AS 'max' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.768947 #9745]  INFO -- : (0.000042s) SELECT max(`id`) AS 'max' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.768963 #9745]  INFO -- : (0.000042s) SELECT max(`id`) AS 'max' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.768978 #9745]  INFO -- : (0.000042s) SELECT max(`id`) AS 'max' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.769072 #9745]  INFO -- : (0.000026s) INSERT INTO `expenses` (`payee`, `amount`, `date`) VALUES ('Starbucks', 5.75, '2017-06-11')
+I, [2020-03-17T17:11:39.769096 #9745]  INFO -- : (0.000026s) INSERT INTO `expenses` (`payee`, `amount`, `date`) VALUES ('Starbucks', 5.75, '2017-06-11')
+I, [2020-03-17T17:11:39.769112 #9745]  INFO -- : (0.000026s) INSERT INTO `expenses` (`payee`, `amount`, `date`) VALUES ('Starbucks', 5.75, '2017-06-11')
+I, [2020-03-17T17:11:39.769127 #9745]  INFO -- : (0.000026s) INSERT INTO `expenses` (`payee`, `amount`, `date`) VALUES ('Starbucks', 5.75, '2017-06-11')
+I, [2020-03-17T17:11:39.769324 #9745]  INFO -- : (0.000041s) SELECT max(`id`) AS 'max' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.769350 #9745]  INFO -- : (0.000041s) SELECT max(`id`) AS 'max' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.769366 #9745]  INFO -- : (0.000041s) SELECT max(`id`) AS 'max' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.769381 #9745]  INFO -- : (0.000041s) SELECT max(`id`) AS 'max' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.769851 #9745]  INFO -- : (0.000375s) SELECT * FROM `expenses` WHERE (`date` = '2017-06-10')
+I, [2020-03-17T17:11:39.769881 #9745]  INFO -- : (0.000375s) SELECT * FROM `expenses` WHERE (`date` = '2017-06-10')
+I, [2020-03-17T17:11:39.769898 #9745]  INFO -- : (0.000375s) SELECT * FROM `expenses` WHERE (`date` = '2017-06-10')
+I, [2020-03-17T17:11:39.769911 #9745]  INFO -- : (0.000375s) SELECT * FROM `expenses` WHERE (`date` = '2017-06-10')
+I, [2020-03-17T17:11:39.772863 #9745]  INFO -- : Edning example: ExpenseTracker::Ledger#expenses_on return all expenses for the provided date
+I, [2020-03-17T17:11:39.772909 #9745]  INFO -- : Edning example: ExpenseTracker::Ledger#expenses_on return all expenses for the provided date
+I, [2020-03-17T17:11:39.772928 #9745]  INFO -- : Edning example: ExpenseTracker::Ledger#expenses_on return all expenses for the provided date
+I, [2020-03-17T17:11:39.772943 #9745]  INFO -- : Edning example: ExpenseTracker::Ledger#expenses_on return all expenses for the provided date
+I, [2020-03-17T17:11:39.772958 #9745]  INFO -- : Edning example: ExpenseTracker::Ledger#expenses_on return all expenses for the provided date
+I, [2020-03-17T17:11:39.773481 #9745]  INFO -- : (0.000467s) ROLLBACK
+I, [2020-03-17T17:11:39.773510 #9745]  INFO -- : (0.000467s) ROLLBACK
+I, [2020-03-17T17:11:39.773536 #9745]  INFO -- : (0.000467s) ROLLBACK
+I, [2020-03-17T17:11:39.773550 #9745]  INFO -- : (0.000467s) ROLLBACK
+I, [2020-03-17T17:11:39.773563 #9745]  INFO -- : (0.000467s) ROLLBACK
+I, [2020-03-17T17:11:39.774130 #9745]  INFO -- : (0.000034s) BEGIN
+I, [2020-03-17T17:11:39.774161 #9745]  INFO -- : (0.000034s) BEGIN
+I, [2020-03-17T17:11:39.774179 #9745]  INFO -- : (0.000034s) BEGIN
+I, [2020-03-17T17:11:39.774195 #9745]  INFO -- : (0.000034s) BEGIN
+I, [2020-03-17T17:11:39.774210 #9745]  INFO -- : (0.000034s) BEGIN
+I, [2020-03-17T17:11:39.774338 #9745]  INFO -- : Starting example: ExpenseTracker::Ledger#record with a valid expense successfully saves the expense in the DB
+I, [2020-03-17T17:11:39.774375 #9745]  INFO -- : Starting example: ExpenseTracker::Ledger#record with a valid expense successfully saves the expense in the DB
+I, [2020-03-17T17:11:39.774392 #9745]  INFO -- : Starting example: ExpenseTracker::Ledger#record with a valid expense successfully saves the expense in the DB
+I, [2020-03-17T17:11:39.774431 #9745]  INFO -- : Starting example: ExpenseTracker::Ledger#record with a valid expense successfully saves the expense in the DB
+I, [2020-03-17T17:11:39.774455 #9745]  INFO -- : Starting example: ExpenseTracker::Ledger#record with a valid expense successfully saves the expense in the DB
+I, [2020-03-17T17:11:39.774472 #9745]  INFO -- : Starting example: ExpenseTracker::Ledger#record with a valid expense successfully saves the expense in the DB
+I, [2020-03-17T17:11:39.774909 #9745]  INFO -- : (0.000286s) INSERT INTO `expenses` (`payee`, `amount`, `date`) VALUES ('Starbucks', 5.75, '2017-06-10')
+I, [2020-03-17T17:11:39.774936 #9745]  INFO -- : (0.000286s) INSERT INTO `expenses` (`payee`, `amount`, `date`) VALUES ('Starbucks', 5.75, '2017-06-10')
+I, [2020-03-17T17:11:39.774952 #9745]  INFO -- : (0.000286s) INSERT INTO `expenses` (`payee`, `amount`, `date`) VALUES ('Starbucks', 5.75, '2017-06-10')
+I, [2020-03-17T17:11:39.774979 #9745]  INFO -- : (0.000286s) INSERT INTO `expenses` (`payee`, `amount`, `date`) VALUES ('Starbucks', 5.75, '2017-06-10')
+I, [2020-03-17T17:11:39.774994 #9745]  INFO -- : (0.000286s) INSERT INTO `expenses` (`payee`, `amount`, `date`) VALUES ('Starbucks', 5.75, '2017-06-10')
+I, [2020-03-17T17:11:39.775011 #9745]  INFO -- : (0.000286s) INSERT INTO `expenses` (`payee`, `amount`, `date`) VALUES ('Starbucks', 5.75, '2017-06-10')
+I, [2020-03-17T17:11:39.775163 #9745]  INFO -- : (0.000090s) SELECT max(`id`) AS 'max' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.775192 #9745]  INFO -- : (0.000090s) SELECT max(`id`) AS 'max' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.775209 #9745]  INFO -- : (0.000090s) SELECT max(`id`) AS 'max' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.775223 #9745]  INFO -- : (0.000090s) SELECT max(`id`) AS 'max' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.775242 #9745]  INFO -- : (0.000090s) SELECT max(`id`) AS 'max' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.775256 #9745]  INFO -- : (0.000090s) SELECT max(`id`) AS 'max' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.779259 #9745]  INFO -- : (0.000124s) SELECT * FROM `expenses`
+I, [2020-03-17T17:11:39.779309 #9745]  INFO -- : (0.000124s) SELECT * FROM `expenses`
+I, [2020-03-17T17:11:39.779328 #9745]  INFO -- : (0.000124s) SELECT * FROM `expenses`
+I, [2020-03-17T17:11:39.779343 #9745]  INFO -- : (0.000124s) SELECT * FROM `expenses`
+I, [2020-03-17T17:11:39.779358 #9745]  INFO -- : (0.000124s) SELECT * FROM `expenses`
+I, [2020-03-17T17:11:39.779372 #9745]  INFO -- : (0.000124s) SELECT * FROM `expenses`
+I, [2020-03-17T17:11:39.781272 #9745]  INFO -- : Edning example: ExpenseTracker::Ledger#record with a valid expense successfully saves the expense in the DB
+I, [2020-03-17T17:11:39.781303 #9745]  INFO -- : Edning example: ExpenseTracker::Ledger#record with a valid expense successfully saves the expense in the DB
+I, [2020-03-17T17:11:39.781321 #9745]  INFO -- : Edning example: ExpenseTracker::Ledger#record with a valid expense successfully saves the expense in the DB
+I, [2020-03-17T17:11:39.781336 #9745]  INFO -- : Edning example: ExpenseTracker::Ledger#record with a valid expense successfully saves the expense in the DB
+I, [2020-03-17T17:11:39.781349 #9745]  INFO -- : Edning example: ExpenseTracker::Ledger#record with a valid expense successfully saves the expense in the DB
+I, [2020-03-17T17:11:39.781363 #9745]  INFO -- : Edning example: ExpenseTracker::Ledger#record with a valid expense successfully saves the expense in the DB
+I, [2020-03-17T17:11:39.781376 #9745]  INFO -- : Edning example: ExpenseTracker::Ledger#record with a valid expense successfully saves the expense in the DB
+I, [2020-03-17T17:11:39.781822 #9745]  INFO -- : (0.000390s) ROLLBACK
+I, [2020-03-17T17:11:39.781850 #9745]  INFO -- : (0.000390s) ROLLBACK
+I, [2020-03-17T17:11:39.781866 #9745]  INFO -- : (0.000390s) ROLLBACK
+I, [2020-03-17T17:11:39.781880 #9745]  INFO -- : (0.000390s) ROLLBACK
+I, [2020-03-17T17:11:39.781893 #9745]  INFO -- : (0.000390s) ROLLBACK
+I, [2020-03-17T17:11:39.781927 #9745]  INFO -- : (0.000390s) ROLLBACK
+I, [2020-03-17T17:11:39.781943 #9745]  INFO -- : (0.000390s) ROLLBACK
+I, [2020-03-17T17:11:39.782790 #9745]  INFO -- : (0.000024s) BEGIN
+I, [2020-03-17T17:11:39.782829 #9745]  INFO -- : (0.000024s) BEGIN
+I, [2020-03-17T17:11:39.782849 #9745]  INFO -- : (0.000024s) BEGIN
+I, [2020-03-17T17:11:39.782866 #9745]  INFO -- : (0.000024s) BEGIN
+I, [2020-03-17T17:11:39.782883 #9745]  INFO -- : (0.000024s) BEGIN
+I, [2020-03-17T17:11:39.782898 #9745]  INFO -- : (0.000024s) BEGIN
+I, [2020-03-17T17:11:39.782914 #9745]  INFO -- : (0.000024s) BEGIN
+I, [2020-03-17T17:11:39.783076 #9745]  INFO -- : Starting example: ExpenseTracker::Ledger#record when the expense lacks a payee rejects the expense as invalid
+I, [2020-03-17T17:11:39.783104 #9745]  INFO -- : Starting example: ExpenseTracker::Ledger#record when the expense lacks a payee rejects the expense as invalid
+I, [2020-03-17T17:11:39.783120 #9745]  INFO -- : Starting example: ExpenseTracker::Ledger#record when the expense lacks a payee rejects the expense as invalid
+I, [2020-03-17T17:11:39.783135 #9745]  INFO -- : Starting example: ExpenseTracker::Ledger#record when the expense lacks a payee rejects the expense as invalid
+I, [2020-03-17T17:11:39.783150 #9745]  INFO -- : Starting example: ExpenseTracker::Ledger#record when the expense lacks a payee rejects the expense as invalid
+I, [2020-03-17T17:11:39.783165 #9745]  INFO -- : Starting example: ExpenseTracker::Ledger#record when the expense lacks a payee rejects the expense as invalid
+I, [2020-03-17T17:11:39.783179 #9745]  INFO -- : Starting example: ExpenseTracker::Ledger#record when the expense lacks a payee rejects the expense as invalid
+I, [2020-03-17T17:11:39.783194 #9745]  INFO -- : Starting example: ExpenseTracker::Ledger#record when the expense lacks a payee rejects the expense as invalid
+I, [2020-03-17T17:11:39.783603 #9745]  INFO -- : (0.000132s) SELECT count(*) AS 'count' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.783642 #9745]  INFO -- : (0.000132s) SELECT count(*) AS 'count' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.783662 #9745]  INFO -- : (0.000132s) SELECT count(*) AS 'count' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.783679 #9745]  INFO -- : (0.000132s) SELECT count(*) AS 'count' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.783696 #9745]  INFO -- : (0.000132s) SELECT count(*) AS 'count' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.783713 #9745]  INFO -- : (0.000132s) SELECT count(*) AS 'count' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.783728 #9745]  INFO -- : (0.000132s) SELECT count(*) AS 'count' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.783744 #9745]  INFO -- : (0.000132s) SELECT count(*) AS 'count' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.783882 #9745]  INFO -- : Edning example: ExpenseTracker::Ledger#record when the expense lacks a payee rejects the expense as invalid
+I, [2020-03-17T17:11:39.783910 #9745]  INFO -- : Edning example: ExpenseTracker::Ledger#record when the expense lacks a payee rejects the expense as invalid
+I, [2020-03-17T17:11:39.783928 #9745]  INFO -- : Edning example: ExpenseTracker::Ledger#record when the expense lacks a payee rejects the expense as invalid
+I, [2020-03-17T17:11:39.784423 #9745]  INFO -- : Edning example: ExpenseTracker::Ledger#record when the expense lacks a payee rejects the expense as invalid
+I, [2020-03-17T17:11:39.784447 #9745]  INFO -- : Edning example: ExpenseTracker::Ledger#record when the expense lacks a payee rejects the expense as invalid
+I, [2020-03-17T17:11:39.784469 #9745]  INFO -- : Edning example: ExpenseTracker::Ledger#record when the expense lacks a payee rejects the expense as invalid
+I, [2020-03-17T17:11:39.784525 #9745]  INFO -- : Edning example: ExpenseTracker::Ledger#record when the expense lacks a payee rejects the expense as invalid
+I, [2020-03-17T17:11:39.784558 #9745]  INFO -- : Edning example: ExpenseTracker::Ledger#record when the expense lacks a payee rejects the expense as invalid
+I, [2020-03-17T17:11:39.784576 #9745]  INFO -- : Edning example: ExpenseTracker::Ledger#record when the expense lacks a payee rejects the expense as invalid
+I, [2020-03-17T17:11:39.784667 #9745]  INFO -- : (0.000027s) ROLLBACK
+I, [2020-03-17T17:11:39.784690 #9745]  INFO -- : (0.000027s) ROLLBACK
+I, [2020-03-17T17:11:39.784705 #9745]  INFO -- : (0.000027s) ROLLBACK
+I, [2020-03-17T17:11:39.784719 #9745]  INFO -- : (0.000027s) ROLLBACK
+I, [2020-03-17T17:11:39.784732 #9745]  INFO -- : (0.000027s) ROLLBACK
+I, [2020-03-17T17:11:39.784745 #9745]  INFO -- : (0.000027s) ROLLBACK
+I, [2020-03-17T17:11:39.784757 #9745]  INFO -- : (0.000027s) ROLLBACK
+I, [2020-03-17T17:11:39.784770 #9745]  INFO -- : (0.000027s) ROLLBACK
+I, [2020-03-17T17:11:39.784783 #9745]  INFO -- : (0.000027s) ROLLBACK
+I, [2020-03-17T17:11:39.785252 #9745]  INFO -- : Starting example: ExpenseTracker::API GET /expenses/:date when expenses exist on the given date responds with a 200 (OK)
+I, [2020-03-17T17:11:39.785282 #9745]  INFO -- : Starting example: ExpenseTracker::API GET /expenses/:date when expenses exist on the given date responds with a 200 (OK)
+I, [2020-03-17T17:11:39.785299 #9745]  INFO -- : Starting example: ExpenseTracker::API GET /expenses/:date when expenses exist on the given date responds with a 200 (OK)
+I, [2020-03-17T17:11:39.785314 #9745]  INFO -- : Starting example: ExpenseTracker::API GET /expenses/:date when expenses exist on the given date responds with a 200 (OK)
+I, [2020-03-17T17:11:39.785328 #9745]  INFO -- : Starting example: ExpenseTracker::API GET /expenses/:date when expenses exist on the given date responds with a 200 (OK)
+I, [2020-03-17T17:11:39.786071 #9745]  INFO -- : Starting example: ExpenseTracker::API GET /expenses/:date when expenses exist on the given date responds with a 200 (OK)
+I, [2020-03-17T17:11:39.786090 #9745]  INFO -- : Starting example: ExpenseTracker::API GET /expenses/:date when expenses exist on the given date responds with a 200 (OK)
+I, [2020-03-17T17:11:39.786104 #9745]  INFO -- : Starting example: ExpenseTracker::API GET /expenses/:date when expenses exist on the given date responds with a 200 (OK)
+I, [2020-03-17T17:11:39.786118 #9745]  INFO -- : Starting example: ExpenseTracker::API GET /expenses/:date when expenses exist on the given date responds with a 200 (OK)
+I, [2020-03-17T17:11:39.786131 #9745]  INFO -- : Starting example: ExpenseTracker::API GET /expenses/:date when expenses exist on the given date responds with a 200 (OK)
+I, [2020-03-17T17:11:39.829137 #9745]  INFO -- : Edning example: ExpenseTracker::API GET /expenses/:date when expenses exist on the given date responds with a 200 (OK)
+I, [2020-03-17T17:11:39.829182 #9745]  INFO -- : Edning example: ExpenseTracker::API GET /expenses/:date when expenses exist on the given date responds with a 200 (OK)
+I, [2020-03-17T17:11:39.829202 #9745]  INFO -- : Edning example: ExpenseTracker::API GET /expenses/:date when expenses exist on the given date responds with a 200 (OK)
+I, [2020-03-17T17:11:39.829217 #9745]  INFO -- : Edning example: ExpenseTracker::API GET /expenses/:date when expenses exist on the given date responds with a 200 (OK)
+I, [2020-03-17T17:11:39.829231 #9745]  INFO -- : Edning example: ExpenseTracker::API GET /expenses/:date when expenses exist on the given date responds with a 200 (OK)
+I, [2020-03-17T17:11:39.829245 #9745]  INFO -- : Edning example: ExpenseTracker::API GET /expenses/:date when expenses exist on the given date responds with a 200 (OK)
+I, [2020-03-17T17:11:39.829259 #9745]  INFO -- : Edning example: ExpenseTracker::API GET /expenses/:date when expenses exist on the given date responds with a 200 (OK)
+I, [2020-03-17T17:11:39.829272 #9745]  INFO -- : Edning example: ExpenseTracker::API GET /expenses/:date when expenses exist on the given date responds with a 200 (OK)
+I, [2020-03-17T17:11:39.829285 #9745]  INFO -- : Edning example: ExpenseTracker::API GET /expenses/:date when expenses exist on the given date responds with a 200 (OK)
+I, [2020-03-17T17:11:39.829298 #9745]  INFO -- : Edning example: ExpenseTracker::API GET /expenses/:date when expenses exist on the given date responds with a 200 (OK)
+I, [2020-03-17T17:11:39.829332 #9745]  INFO -- : Edning example: ExpenseTracker::API GET /expenses/:date when expenses exist on the given date responds with a 200 (OK)
+I, [2020-03-17T17:11:39.829594 #9745]  INFO -- : Starting example: ExpenseTracker::API GET /expenses/:date when expenses exist on the given date returns the expense records as JSON
+I, [2020-03-17T17:11:39.829621 #9745]  INFO -- : Starting example: ExpenseTracker::API GET /expenses/:date when expenses exist on the given date returns the expense records as JSON
+I, [2020-03-17T17:11:39.829637 #9745]  INFO -- : Starting example: ExpenseTracker::API GET /expenses/:date when expenses exist on the given date returns the expense records as JSON
+I, [2020-03-17T17:11:39.829651 #9745]  INFO -- : Starting example: ExpenseTracker::API GET /expenses/:date when expenses exist on the given date returns the expense records as JSON
+I, [2020-03-17T17:11:39.829665 #9745]  INFO -- : Starting example: ExpenseTracker::API GET /expenses/:date when expenses exist on the given date returns the expense records as JSON
+I, [2020-03-17T17:11:39.829679 #9745]  INFO -- : Starting example: ExpenseTracker::API GET /expenses/:date when expenses exist on the given date returns the expense records as JSON
+I, [2020-03-17T17:11:39.829699 #9745]  INFO -- : Starting example: ExpenseTracker::API GET /expenses/:date when expenses exist on the given date returns the expense records as JSON
+I, [2020-03-17T17:11:39.829722 #9745]  INFO -- : Starting example: ExpenseTracker::API GET /expenses/:date when expenses exist on the given date returns the expense records as JSON
+I, [2020-03-17T17:11:39.829737 #9745]  INFO -- : Starting example: ExpenseTracker::API GET /expenses/:date when expenses exist on the given date returns the expense records as JSON
+I, [2020-03-17T17:11:39.829751 #9745]  INFO -- : Starting example: ExpenseTracker::API GET /expenses/:date when expenses exist on the given date returns the expense records as JSON
+I, [2020-03-17T17:11:39.829764 #9745]  INFO -- : Starting example: ExpenseTracker::API GET /expenses/:date when expenses exist on the given date returns the expense records as JSON
+I, [2020-03-17T17:11:39.829783 #9745]  INFO -- : Starting example: ExpenseTracker::API GET /expenses/:date when expenses exist on the given date returns the expense records as JSON
+I, [2020-03-17T17:11:39.830561 #9745]  INFO -- : Edning example: ExpenseTracker::API GET /expenses/:date when expenses exist on the given date returns the expense records as JSON
+I, [2020-03-17T17:11:39.830594 #9745]  INFO -- : Edning example: ExpenseTracker::API GET /expenses/:date when expenses exist on the given date returns the expense records as JSON
+I, [2020-03-17T17:11:39.830612 #9745]  INFO -- : Edning example: ExpenseTracker::API GET /expenses/:date when expenses exist on the given date returns the expense records as JSON
+I, [2020-03-17T17:11:39.830628 #9745]  INFO -- : Edning example: ExpenseTracker::API GET /expenses/:date when expenses exist on the given date returns the expense records as JSON
+I, [2020-03-17T17:11:39.830650 #9745]  INFO -- : Edning example: ExpenseTracker::API GET /expenses/:date when expenses exist on the given date returns the expense records as JSON
+I, [2020-03-17T17:11:39.830664 #9745]  INFO -- : Edning example: ExpenseTracker::API GET /expenses/:date when expenses exist on the given date returns the expense records as JSON
+I, [2020-03-17T17:11:39.830676 #9745]  INFO -- : Edning example: ExpenseTracker::API GET /expenses/:date when expenses exist on the given date returns the expense records as JSON
+I, [2020-03-17T17:11:39.830689 #9745]  INFO -- : Edning example: ExpenseTracker::API GET /expenses/:date when expenses exist on the given date returns the expense records as JSON
+I, [2020-03-17T17:11:39.830703 #9745]  INFO -- : Edning example: ExpenseTracker::API GET /expenses/:date when expenses exist on the given date returns the expense records as JSON
+I, [2020-03-17T17:11:39.830715 #9745]  INFO -- : Edning example: ExpenseTracker::API GET /expenses/:date when expenses exist on the given date returns the expense records as JSON
+I, [2020-03-17T17:11:39.830745 #9745]  INFO -- : Edning example: ExpenseTracker::API GET /expenses/:date when expenses exist on the given date returns the expense records as JSON
+I, [2020-03-17T17:11:39.830761 #9745]  INFO -- : Edning example: ExpenseTracker::API GET /expenses/:date when expenses exist on the given date returns the expense records as JSON
+I, [2020-03-17T17:11:39.830779 #9745]  INFO -- : Edning example: ExpenseTracker::API GET /expenses/:date when expenses exist on the given date returns the expense records as JSON
+I, [2020-03-17T17:11:39.831029 #9745]  INFO -- : Starting example: ExpenseTracker::API GET /expenses/:date when there are no expenses on the given date returns an empty array as JSON
+I, [2020-03-17T17:11:39.831054 #9745]  INFO -- : Starting example: ExpenseTracker::API GET /expenses/:date when there are no expenses on the given date returns an empty array as JSON
+I, [2020-03-17T17:11:39.831069 #9745]  INFO -- : Starting example: ExpenseTracker::API GET /expenses/:date when there are no expenses on the given date returns an empty array as JSON
+I, [2020-03-17T17:11:39.831083 #9745]  INFO -- : Starting example: ExpenseTracker::API GET /expenses/:date when there are no expenses on the given date returns an empty array as JSON
+I, [2020-03-17T17:11:39.831108 #9745]  INFO -- : Starting example: ExpenseTracker::API GET /expenses/:date when there are no expenses on the given date returns an empty array as JSON
+I, [2020-03-17T17:11:39.831122 #9745]  INFO -- : Starting example: ExpenseTracker::API GET /expenses/:date when there are no expenses on the given date returns an empty array as JSON
+I, [2020-03-17T17:11:39.831135 #9745]  INFO -- : Starting example: ExpenseTracker::API GET /expenses/:date when there are no expenses on the given date returns an empty array as JSON
+I, [2020-03-17T17:11:39.831147 #9745]  INFO -- : Starting example: ExpenseTracker::API GET /expenses/:date when there are no expenses on the given date returns an empty array as JSON
+I, [2020-03-17T17:11:39.831160 #9745]  INFO -- : Starting example: ExpenseTracker::API GET /expenses/:date when there are no expenses on the given date returns an empty array as JSON
+I, [2020-03-17T17:11:39.831173 #9745]  INFO -- : Starting example: ExpenseTracker::API GET /expenses/:date when there are no expenses on the given date returns an empty array as JSON
+I, [2020-03-17T17:11:39.831185 #9745]  INFO -- : Starting example: ExpenseTracker::API GET /expenses/:date when there are no expenses on the given date returns an empty array as JSON
+I, [2020-03-17T17:11:39.831198 #9745]  INFO -- : Starting example: ExpenseTracker::API GET /expenses/:date when there are no expenses on the given date returns an empty array as JSON
+I, [2020-03-17T17:11:39.831211 #9745]  INFO -- : Starting example: ExpenseTracker::API GET /expenses/:date when there are no expenses on the given date returns an empty array as JSON
+I, [2020-03-17T17:11:39.831223 #9745]  INFO -- : Starting example: ExpenseTracker::API GET /expenses/:date when there are no expenses on the given date returns an empty array as JSON
+I, [2020-03-17T17:11:39.831819 #9745]  INFO -- : Edning example: ExpenseTracker::API GET /expenses/:date when there are no expenses on the given date returns an empty array as JSON
+I, [2020-03-17T17:11:39.831851 #9745]  INFO -- : Edning example: ExpenseTracker::API GET /expenses/:date when there are no expenses on the given date returns an empty array as JSON
+I, [2020-03-17T17:11:39.831870 #9745]  INFO -- : Edning example: ExpenseTracker::API GET /expenses/:date when there are no expenses on the given date returns an empty array as JSON
+I, [2020-03-17T17:11:39.831885 #9745]  INFO -- : Edning example: ExpenseTracker::API GET /expenses/:date when there are no expenses on the given date returns an empty array as JSON
+I, [2020-03-17T17:11:39.831898 #9745]  INFO -- : Edning example: ExpenseTracker::API GET /expenses/:date when there are no expenses on the given date returns an empty array as JSON
+I, [2020-03-17T17:11:39.831933 #9745]  INFO -- : Edning example: ExpenseTracker::API GET /expenses/:date when there are no expenses on the given date returns an empty array as JSON
+I, [2020-03-17T17:11:39.831950 #9745]  INFO -- : Edning example: ExpenseTracker::API GET /expenses/:date when there are no expenses on the given date returns an empty array as JSON
+I, [2020-03-17T17:11:39.831963 #9745]  INFO -- : Edning example: ExpenseTracker::API GET /expenses/:date when there are no expenses on the given date returns an empty array as JSON
+I, [2020-03-17T17:11:39.831977 #9745]  INFO -- : Edning example: ExpenseTracker::API GET /expenses/:date when there are no expenses on the given date returns an empty array as JSON
+I, [2020-03-17T17:11:39.831990 #9745]  INFO -- : Edning example: ExpenseTracker::API GET /expenses/:date when there are no expenses on the given date returns an empty array as JSON
+I, [2020-03-17T17:11:39.832003 #9745]  INFO -- : Edning example: ExpenseTracker::API GET /expenses/:date when there are no expenses on the given date returns an empty array as JSON
+I, [2020-03-17T17:11:39.832023 #9745]  INFO -- : Edning example: ExpenseTracker::API GET /expenses/:date when there are no expenses on the given date returns an empty array as JSON
+I, [2020-03-17T17:11:39.832039 #9745]  INFO -- : Edning example: ExpenseTracker::API GET /expenses/:date when there are no expenses on the given date returns an empty array as JSON
+I, [2020-03-17T17:11:39.832053 #9745]  INFO -- : Edning example: ExpenseTracker::API GET /expenses/:date when there are no expenses on the given date returns an empty array as JSON
+I, [2020-03-17T17:11:39.832068 #9745]  INFO -- : Edning example: ExpenseTracker::API GET /expenses/:date when there are no expenses on the given date returns an empty array as JSON
+I, [2020-03-17T17:11:39.832375 #9745]  INFO -- : Starting example: ExpenseTracker::API GET /expenses/:date when there are no expenses on the given date responds with a 200 (OK)
+I, [2020-03-17T17:11:39.832417 #9745]  INFO -- : Starting example: ExpenseTracker::API GET /expenses/:date when there are no expenses on the given date responds with a 200 (OK)
+I, [2020-03-17T17:11:39.832437 #9745]  INFO -- : Starting example: ExpenseTracker::API GET /expenses/:date when there are no expenses on the given date responds with a 200 (OK)
+I, [2020-03-17T17:11:39.832453 #9745]  INFO -- : Starting example: ExpenseTracker::API GET /expenses/:date when there are no expenses on the given date responds with a 200 (OK)
+I, [2020-03-17T17:11:39.832467 #9745]  INFO -- : Starting example: ExpenseTracker::API GET /expenses/:date when there are no expenses on the given date responds with a 200 (OK)
+I, [2020-03-17T17:11:39.832482 #9745]  INFO -- : Starting example: ExpenseTracker::API GET /expenses/:date when there are no expenses on the given date responds with a 200 (OK)
+I, [2020-03-17T17:11:39.832496 #9745]  INFO -- : Starting example: ExpenseTracker::API GET /expenses/:date when there are no expenses on the given date responds with a 200 (OK)
+I, [2020-03-17T17:11:39.832511 #9745]  INFO -- : Starting example: ExpenseTracker::API GET /expenses/:date when there are no expenses on the given date responds with a 200 (OK)
+I, [2020-03-17T17:11:39.832525 #9745]  INFO -- : Starting example: ExpenseTracker::API GET /expenses/:date when there are no expenses on the given date responds with a 200 (OK)
+I, [2020-03-17T17:11:39.832539 #9745]  INFO -- : Starting example: ExpenseTracker::API GET /expenses/:date when there are no expenses on the given date responds with a 200 (OK)
+I, [2020-03-17T17:11:39.832553 #9745]  INFO -- : Starting example: ExpenseTracker::API GET /expenses/:date when there are no expenses on the given date responds with a 200 (OK)
+I, [2020-03-17T17:11:39.832567 #9745]  INFO -- : Starting example: ExpenseTracker::API GET /expenses/:date when there are no expenses on the given date responds with a 200 (OK)
+I, [2020-03-17T17:11:39.832581 #9745]  INFO -- : Starting example: ExpenseTracker::API GET /expenses/:date when there are no expenses on the given date responds with a 200 (OK)
+I, [2020-03-17T17:11:39.832615 #9745]  INFO -- : Starting example: ExpenseTracker::API GET /expenses/:date when there are no expenses on the given date responds with a 200 (OK)
+I, [2020-03-17T17:11:39.832634 #9745]  INFO -- : Starting example: ExpenseTracker::API GET /expenses/:date when there are no expenses on the given date responds with a 200 (OK)
+I, [2020-03-17T17:11:39.832651 #9745]  INFO -- : Starting example: ExpenseTracker::API GET /expenses/:date when there are no expenses on the given date responds with a 200 (OK)
+I, [2020-03-17T17:11:39.833367 #9745]  INFO -- : Edning example: ExpenseTracker::API GET /expenses/:date when there are no expenses on the given date responds with a 200 (OK)
+I, [2020-03-17T17:11:39.833402 #9745]  INFO -- : Edning example: ExpenseTracker::API GET /expenses/:date when there are no expenses on the given date responds with a 200 (OK)
+I, [2020-03-17T17:11:39.833421 #9745]  INFO -- : Edning example: ExpenseTracker::API GET /expenses/:date when there are no expenses on the given date responds with a 200 (OK)
+I, [2020-03-17T17:11:39.833437 #9745]  INFO -- : Edning example: ExpenseTracker::API GET /expenses/:date when there are no expenses on the given date responds with a 200 (OK)
+I, [2020-03-17T17:11:39.833452 #9745]  INFO -- : Edning example: ExpenseTracker::API GET /expenses/:date when there are no expenses on the given date responds with a 200 (OK)
+I, [2020-03-17T17:11:39.833467 #9745]  INFO -- : Edning example: ExpenseTracker::API GET /expenses/:date when there are no expenses on the given date responds with a 200 (OK)
+I, [2020-03-17T17:11:39.833482 #9745]  INFO -- : Edning example: ExpenseTracker::API GET /expenses/:date when there are no expenses on the given date responds with a 200 (OK)
+I, [2020-03-17T17:11:39.833497 #9745]  INFO -- : Edning example: ExpenseTracker::API GET /expenses/:date when there are no expenses on the given date responds with a 200 (OK)
+I, [2020-03-17T17:11:39.833512 #9745]  INFO -- : Edning example: ExpenseTracker::API GET /expenses/:date when there are no expenses on the given date responds with a 200 (OK)
+I, [2020-03-17T17:11:39.833526 #9745]  INFO -- : Edning example: ExpenseTracker::API GET /expenses/:date when there are no expenses on the given date responds with a 200 (OK)
+I, [2020-03-17T17:11:39.833541 #9745]  INFO -- : Edning example: ExpenseTracker::API GET /expenses/:date when there are no expenses on the given date responds with a 200 (OK)
+I, [2020-03-17T17:11:39.833556 #9745]  INFO -- : Edning example: ExpenseTracker::API GET /expenses/:date when there are no expenses on the given date responds with a 200 (OK)
+I, [2020-03-17T17:11:39.833570 #9745]  INFO -- : Edning example: ExpenseTracker::API GET /expenses/:date when there are no expenses on the given date responds with a 200 (OK)
+I, [2020-03-17T17:11:39.833585 #9745]  INFO -- : Edning example: ExpenseTracker::API GET /expenses/:date when there are no expenses on the given date responds with a 200 (OK)
+I, [2020-03-17T17:11:39.833599 #9745]  INFO -- : Edning example: ExpenseTracker::API GET /expenses/:date when there are no expenses on the given date responds with a 200 (OK)
+I, [2020-03-17T17:11:39.833614 #9745]  INFO -- : Edning example: ExpenseTracker::API GET /expenses/:date when there are no expenses on the given date responds with a 200 (OK)
+I, [2020-03-17T17:11:39.833629 #9745]  INFO -- : Edning example: ExpenseTracker::API GET /expenses/:date when there are no expenses on the given date responds with a 200 (OK)
+I, [2020-03-17T17:11:39.833998 #9745]  INFO -- : Starting example: ExpenseTracker::API POST /expenses when the expense is successfully recorded return the expense id
+I, [2020-03-17T17:11:39.834025 #9745]  INFO -- : Starting example: ExpenseTracker::API POST /expenses when the expense is successfully recorded return the expense id
+I, [2020-03-17T17:11:39.834042 #9745]  INFO -- : Starting example: ExpenseTracker::API POST /expenses when the expense is successfully recorded return the expense id
+I, [2020-03-17T17:11:39.834056 #9745]  INFO -- : Starting example: ExpenseTracker::API POST /expenses when the expense is successfully recorded return the expense id
+I, [2020-03-17T17:11:39.834087 #9745]  INFO -- : Starting example: ExpenseTracker::API POST /expenses when the expense is successfully recorded return the expense id
+I, [2020-03-17T17:11:39.834103 #9745]  INFO -- : Starting example: ExpenseTracker::API POST /expenses when the expense is successfully recorded return the expense id
+I, [2020-03-17T17:11:39.834117 #9745]  INFO -- : Starting example: ExpenseTracker::API POST /expenses when the expense is successfully recorded return the expense id
+I, [2020-03-17T17:11:39.834130 #9745]  INFO -- : Starting example: ExpenseTracker::API POST /expenses when the expense is successfully recorded return the expense id
+I, [2020-03-17T17:11:39.834143 #9745]  INFO -- : Starting example: ExpenseTracker::API POST /expenses when the expense is successfully recorded return the expense id
+I, [2020-03-17T17:11:39.834156 #9745]  INFO -- : Starting example: ExpenseTracker::API POST /expenses when the expense is successfully recorded return the expense id
+I, [2020-03-17T17:11:39.834170 #9745]  INFO -- : Starting example: ExpenseTracker::API POST /expenses when the expense is successfully recorded return the expense id
+I, [2020-03-17T17:11:39.834184 #9745]  INFO -- : Starting example: ExpenseTracker::API POST /expenses when the expense is successfully recorded return the expense id
+I, [2020-03-17T17:11:39.834204 #9745]  INFO -- : Starting example: ExpenseTracker::API POST /expenses when the expense is successfully recorded return the expense id
+I, [2020-03-17T17:11:39.834226 #9745]  INFO -- : Starting example: ExpenseTracker::API POST /expenses when the expense is successfully recorded return the expense id
+I, [2020-03-17T17:11:39.834241 #9745]  INFO -- : Starting example: ExpenseTracker::API POST /expenses when the expense is successfully recorded return the expense id
+I, [2020-03-17T17:11:39.834254 #9745]  INFO -- : Starting example: ExpenseTracker::API POST /expenses when the expense is successfully recorded return the expense id
+I, [2020-03-17T17:11:39.834266 #9745]  INFO -- : Starting example: ExpenseTracker::API POST /expenses when the expense is successfully recorded return the expense id
+I, [2020-03-17T17:11:39.834279 #9745]  INFO -- : Starting example: ExpenseTracker::API POST /expenses when the expense is successfully recorded return the expense id
+I, [2020-03-17T17:11:39.838835 #9745]  INFO -- : Edning example: ExpenseTracker::API POST /expenses when the expense is successfully recorded return the expense id
+I, [2020-03-17T17:11:39.838874 #9745]  INFO -- : Edning example: ExpenseTracker::API POST /expenses when the expense is successfully recorded return the expense id
+I, [2020-03-17T17:11:39.838893 #9745]  INFO -- : Edning example: ExpenseTracker::API POST /expenses when the expense is successfully recorded return the expense id
+I, [2020-03-17T17:11:39.838908 #9745]  INFO -- : Edning example: ExpenseTracker::API POST /expenses when the expense is successfully recorded return the expense id
+I, [2020-03-17T17:11:39.838922 #9745]  INFO -- : Edning example: ExpenseTracker::API POST /expenses when the expense is successfully recorded return the expense id
+I, [2020-03-17T17:11:39.838936 #9745]  INFO -- : Edning example: ExpenseTracker::API POST /expenses when the expense is successfully recorded return the expense id
+I, [2020-03-17T17:11:39.838990 #9745]  INFO -- : Edning example: ExpenseTracker::API POST /expenses when the expense is successfully recorded return the expense id
+I, [2020-03-17T17:11:39.839008 #9745]  INFO -- : Edning example: ExpenseTracker::API POST /expenses when the expense is successfully recorded return the expense id
+I, [2020-03-17T17:11:39.839022 #9745]  INFO -- : Edning example: ExpenseTracker::API POST /expenses when the expense is successfully recorded return the expense id
+I, [2020-03-17T17:11:39.839035 #9745]  INFO -- : Edning example: ExpenseTracker::API POST /expenses when the expense is successfully recorded return the expense id
+I, [2020-03-17T17:11:39.839049 #9745]  INFO -- : Edning example: ExpenseTracker::API POST /expenses when the expense is successfully recorded return the expense id
+I, [2020-03-17T17:11:39.839080 #9745]  INFO -- : Edning example: ExpenseTracker::API POST /expenses when the expense is successfully recorded return the expense id
+I, [2020-03-17T17:11:39.839096 #9745]  INFO -- : Edning example: ExpenseTracker::API POST /expenses when the expense is successfully recorded return the expense id
+I, [2020-03-17T17:11:39.839110 #9745]  INFO -- : Edning example: ExpenseTracker::API POST /expenses when the expense is successfully recorded return the expense id
+I, [2020-03-17T17:11:39.839123 #9745]  INFO -- : Edning example: ExpenseTracker::API POST /expenses when the expense is successfully recorded return the expense id
+I, [2020-03-17T17:11:39.839136 #9745]  INFO -- : Edning example: ExpenseTracker::API POST /expenses when the expense is successfully recorded return the expense id
+I, [2020-03-17T17:11:39.839148 #9745]  INFO -- : Edning example: ExpenseTracker::API POST /expenses when the expense is successfully recorded return the expense id
+I, [2020-03-17T17:11:39.839161 #9745]  INFO -- : Edning example: ExpenseTracker::API POST /expenses when the expense is successfully recorded return the expense id
+I, [2020-03-17T17:11:39.839174 #9745]  INFO -- : Edning example: ExpenseTracker::API POST /expenses when the expense is successfully recorded return the expense id
+I, [2020-03-17T17:11:39.839387 #9745]  INFO -- : Starting example: ExpenseTracker::API POST /expenses when the expense is successfully recorded responds with a 200 (OK)
+I, [2020-03-17T17:11:39.839413 #9745]  INFO -- : Starting example: ExpenseTracker::API POST /expenses when the expense is successfully recorded responds with a 200 (OK)
+I, [2020-03-17T17:11:39.839429 #9745]  INFO -- : Starting example: ExpenseTracker::API POST /expenses when the expense is successfully recorded responds with a 200 (OK)
+I, [2020-03-17T17:11:39.839442 #9745]  INFO -- : Starting example: ExpenseTracker::API POST /expenses when the expense is successfully recorded responds with a 200 (OK)
+I, [2020-03-17T17:11:39.839456 #9745]  INFO -- : Starting example: ExpenseTracker::API POST /expenses when the expense is successfully recorded responds with a 200 (OK)
+I, [2020-03-17T17:11:39.839468 #9745]  INFO -- : Starting example: ExpenseTracker::API POST /expenses when the expense is successfully recorded responds with a 200 (OK)
+I, [2020-03-17T17:11:39.839481 #9745]  INFO -- : Starting example: ExpenseTracker::API POST /expenses when the expense is successfully recorded responds with a 200 (OK)
+I, [2020-03-17T17:11:39.839494 #9745]  INFO -- : Starting example: ExpenseTracker::API POST /expenses when the expense is successfully recorded responds with a 200 (OK)
+I, [2020-03-17T17:11:39.839507 #9745]  INFO -- : Starting example: ExpenseTracker::API POST /expenses when the expense is successfully recorded responds with a 200 (OK)
+I, [2020-03-17T17:11:39.839520 #9745]  INFO -- : Starting example: ExpenseTracker::API POST /expenses when the expense is successfully recorded responds with a 200 (OK)
+I, [2020-03-17T17:11:39.839532 #9745]  INFO -- : Starting example: ExpenseTracker::API POST /expenses when the expense is successfully recorded responds with a 200 (OK)
+I, [2020-03-17T17:11:39.839545 #9745]  INFO -- : Starting example: ExpenseTracker::API POST /expenses when the expense is successfully recorded responds with a 200 (OK)
+I, [2020-03-17T17:11:39.839558 #9745]  INFO -- : Starting example: ExpenseTracker::API POST /expenses when the expense is successfully recorded responds with a 200 (OK)
+I, [2020-03-17T17:11:39.839570 #9745]  INFO -- : Starting example: ExpenseTracker::API POST /expenses when the expense is successfully recorded responds with a 200 (OK)
+I, [2020-03-17T17:11:39.839583 #9745]  INFO -- : Starting example: ExpenseTracker::API POST /expenses when the expense is successfully recorded responds with a 200 (OK)
+I, [2020-03-17T17:11:39.839595 #9745]  INFO -- : Starting example: ExpenseTracker::API POST /expenses when the expense is successfully recorded responds with a 200 (OK)
+I, [2020-03-17T17:11:39.839629 #9745]  INFO -- : Starting example: ExpenseTracker::API POST /expenses when the expense is successfully recorded responds with a 200 (OK)
+I, [2020-03-17T17:11:39.839644 #9745]  INFO -- : Starting example: ExpenseTracker::API POST /expenses when the expense is successfully recorded responds with a 200 (OK)
+I, [2020-03-17T17:11:39.839657 #9745]  INFO -- : Starting example: ExpenseTracker::API POST /expenses when the expense is successfully recorded responds with a 200 (OK)
+I, [2020-03-17T17:11:39.839669 #9745]  INFO -- : Starting example: ExpenseTracker::API POST /expenses when the expense is successfully recorded responds with a 200 (OK)
+I, [2020-03-17T17:11:39.840375 #9745]  INFO -- : Edning example: ExpenseTracker::API POST /expenses when the expense is successfully recorded responds with a 200 (OK)
+I, [2020-03-17T17:11:39.840405 #9745]  INFO -- : Edning example: ExpenseTracker::API POST /expenses when the expense is successfully recorded responds with a 200 (OK)
+I, [2020-03-17T17:11:39.840422 #9745]  INFO -- : Edning example: ExpenseTracker::API POST /expenses when the expense is successfully recorded responds with a 200 (OK)
+I, [2020-03-17T17:11:39.840436 #9745]  INFO -- : Edning example: ExpenseTracker::API POST /expenses when the expense is successfully recorded responds with a 200 (OK)
+I, [2020-03-17T17:11:39.840454 #9745]  INFO -- : Edning example: ExpenseTracker::API POST /expenses when the expense is successfully recorded responds with a 200 (OK)
+I, [2020-03-17T17:11:39.840468 #9745]  INFO -- : Edning example: ExpenseTracker::API POST /expenses when the expense is successfully recorded responds with a 200 (OK)
+I, [2020-03-17T17:11:39.840481 #9745]  INFO -- : Edning example: ExpenseTracker::API POST /expenses when the expense is successfully recorded responds with a 200 (OK)
+I, [2020-03-17T17:11:39.840494 #9745]  INFO -- : Edning example: ExpenseTracker::API POST /expenses when the expense is successfully recorded responds with a 200 (OK)
+I, [2020-03-17T17:11:39.840506 #9745]  INFO -- : Edning example: ExpenseTracker::API POST /expenses when the expense is successfully recorded responds with a 200 (OK)
+I, [2020-03-17T17:11:39.840519 #9745]  INFO -- : Edning example: ExpenseTracker::API POST /expenses when the expense is successfully recorded responds with a 200 (OK)
+I, [2020-03-17T17:11:39.840531 #9745]  INFO -- : Edning example: ExpenseTracker::API POST /expenses when the expense is successfully recorded responds with a 200 (OK)
+I, [2020-03-17T17:11:39.840544 #9745]  INFO -- : Edning example: ExpenseTracker::API POST /expenses when the expense is successfully recorded responds with a 200 (OK)
+I, [2020-03-17T17:11:39.840556 #9745]  INFO -- : Edning example: ExpenseTracker::API POST /expenses when the expense is successfully recorded responds with a 200 (OK)
+I, [2020-03-17T17:11:39.840569 #9745]  INFO -- : Edning example: ExpenseTracker::API POST /expenses when the expense is successfully recorded responds with a 200 (OK)
+I, [2020-03-17T17:11:39.840585 #9745]  INFO -- : Edning example: ExpenseTracker::API POST /expenses when the expense is successfully recorded responds with a 200 (OK)
+I, [2020-03-17T17:11:39.840598 #9745]  INFO -- : Edning example: ExpenseTracker::API POST /expenses when the expense is successfully recorded responds with a 200 (OK)
+I, [2020-03-17T17:11:39.840610 #9745]  INFO -- : Edning example: ExpenseTracker::API POST /expenses when the expense is successfully recorded responds with a 200 (OK)
+I, [2020-03-17T17:11:39.840623 #9745]  INFO -- : Edning example: ExpenseTracker::API POST /expenses when the expense is successfully recorded responds with a 200 (OK)
+I, [2020-03-17T17:11:39.840635 #9745]  INFO -- : Edning example: ExpenseTracker::API POST /expenses when the expense is successfully recorded responds with a 200 (OK)
+I, [2020-03-17T17:11:39.840648 #9745]  INFO -- : Edning example: ExpenseTracker::API POST /expenses when the expense is successfully recorded responds with a 200 (OK)
+I, [2020-03-17T17:11:39.840660 #9745]  INFO -- : Edning example: ExpenseTracker::API POST /expenses when the expense is successfully recorded responds with a 200 (OK)
+I, [2020-03-17T17:11:39.840936 #9745]  INFO -- : Starting example: ExpenseTracker::API POST /expenses when the expense fails validateion responds with a 422 (Unprocessable entity)
+I, [2020-03-17T17:11:39.840963 #9745]  INFO -- : Starting example: ExpenseTracker::API POST /expenses when the expense fails validateion responds with a 422 (Unprocessable entity)
+I, [2020-03-17T17:11:39.840981 #9745]  INFO -- : Starting example: ExpenseTracker::API POST /expenses when the expense fails validateion responds with a 422 (Unprocessable entity)
+I, [2020-03-17T17:11:39.840997 #9745]  INFO -- : Starting example: ExpenseTracker::API POST /expenses when the expense fails validateion responds with a 422 (Unprocessable entity)
+I, [2020-03-17T17:11:39.841021 #9745]  INFO -- : Starting example: ExpenseTracker::API POST /expenses when the expense fails validateion responds with a 422 (Unprocessable entity)
+I, [2020-03-17T17:11:39.841034 #9745]  INFO -- : Starting example: ExpenseTracker::API POST /expenses when the expense fails validateion responds with a 422 (Unprocessable entity)
+I, [2020-03-17T17:11:39.841048 #9745]  INFO -- : Starting example: ExpenseTracker::API POST /expenses when the expense fails validateion responds with a 422 (Unprocessable entity)
+I, [2020-03-17T17:11:39.841096 #9745]  INFO -- : Starting example: ExpenseTracker::API POST /expenses when the expense fails validateion responds with a 422 (Unprocessable entity)
+I, [2020-03-17T17:11:39.841111 #9745]  INFO -- : Starting example: ExpenseTracker::API POST /expenses when the expense fails validateion responds with a 422 (Unprocessable entity)
+I, [2020-03-17T17:11:39.841125 #9745]  INFO -- : Starting example: ExpenseTracker::API POST /expenses when the expense fails validateion responds with a 422 (Unprocessable entity)
+I, [2020-03-17T17:11:39.841144 #9745]  INFO -- : Starting example: ExpenseTracker::API POST /expenses when the expense fails validateion responds with a 422 (Unprocessable entity)
+I, [2020-03-17T17:11:39.841163 #9745]  INFO -- : Starting example: ExpenseTracker::API POST /expenses when the expense fails validateion responds with a 422 (Unprocessable entity)
+I, [2020-03-17T17:11:39.841177 #9745]  INFO -- : Starting example: ExpenseTracker::API POST /expenses when the expense fails validateion responds with a 422 (Unprocessable entity)
+I, [2020-03-17T17:11:39.841191 #9745]  INFO -- : Starting example: ExpenseTracker::API POST /expenses when the expense fails validateion responds with a 422 (Unprocessable entity)
+I, [2020-03-17T17:11:39.841204 #9745]  INFO -- : Starting example: ExpenseTracker::API POST /expenses when the expense fails validateion responds with a 422 (Unprocessable entity)
+I, [2020-03-17T17:11:39.841218 #9745]  INFO -- : Starting example: ExpenseTracker::API POST /expenses when the expense fails validateion responds with a 422 (Unprocessable entity)
+I, [2020-03-17T17:11:39.841231 #9745]  INFO -- : Starting example: ExpenseTracker::API POST /expenses when the expense fails validateion responds with a 422 (Unprocessable entity)
+I, [2020-03-17T17:11:39.841245 #9745]  INFO -- : Starting example: ExpenseTracker::API POST /expenses when the expense fails validateion responds with a 422 (Unprocessable entity)
+I, [2020-03-17T17:11:39.841258 #9745]  INFO -- : Starting example: ExpenseTracker::API POST /expenses when the expense fails validateion responds with a 422 (Unprocessable entity)
+I, [2020-03-17T17:11:39.841342 #9745]  INFO -- : Starting example: ExpenseTracker::API POST /expenses when the expense fails validateion responds with a 422 (Unprocessable entity)
+I, [2020-03-17T17:11:39.841401 #9745]  INFO -- : Starting example: ExpenseTracker::API POST /expenses when the expense fails validateion responds with a 422 (Unprocessable entity)
+I, [2020-03-17T17:11:39.841438 #9745]  INFO -- : Starting example: ExpenseTracker::API POST /expenses when the expense fails validateion responds with a 422 (Unprocessable entity)
+I, [2020-03-17T17:11:39.842305 #9745]  INFO -- : Edning example: ExpenseTracker::API POST /expenses when the expense fails validateion responds with a 422 (Unprocessable entity)
+I, [2020-03-17T17:11:39.842358 #9745]  INFO -- : Edning example: ExpenseTracker::API POST /expenses when the expense fails validateion responds with a 422 (Unprocessable entity)
+I, [2020-03-17T17:11:39.842379 #9745]  INFO -- : Edning example: ExpenseTracker::API POST /expenses when the expense fails validateion responds with a 422 (Unprocessable entity)
+I, [2020-03-17T17:11:39.842395 #9745]  INFO -- : Edning example: ExpenseTracker::API POST /expenses when the expense fails validateion responds with a 422 (Unprocessable entity)
+I, [2020-03-17T17:11:39.842410 #9745]  INFO -- : Edning example: ExpenseTracker::API POST /expenses when the expense fails validateion responds with a 422 (Unprocessable entity)
+I, [2020-03-17T17:11:39.842424 #9745]  INFO -- : Edning example: ExpenseTracker::API POST /expenses when the expense fails validateion responds with a 422 (Unprocessable entity)
+I, [2020-03-17T17:11:39.842438 #9745]  INFO -- : Edning example: ExpenseTracker::API POST /expenses when the expense fails validateion responds with a 422 (Unprocessable entity)
+I, [2020-03-17T17:11:39.842452 #9745]  INFO -- : Edning example: ExpenseTracker::API POST /expenses when the expense fails validateion responds with a 422 (Unprocessable entity)
+I, [2020-03-17T17:11:39.842466 #9745]  INFO -- : Edning example: ExpenseTracker::API POST /expenses when the expense fails validateion responds with a 422 (Unprocessable entity)
+I, [2020-03-17T17:11:39.842480 #9745]  INFO -- : Edning example: ExpenseTracker::API POST /expenses when the expense fails validateion responds with a 422 (Unprocessable entity)
+I, [2020-03-17T17:11:39.842494 #9745]  INFO -- : Edning example: ExpenseTracker::API POST /expenses when the expense fails validateion responds with a 422 (Unprocessable entity)
+I, [2020-03-17T17:11:39.842516 #9745]  INFO -- : Edning example: ExpenseTracker::API POST /expenses when the expense fails validateion responds with a 422 (Unprocessable entity)
+I, [2020-03-17T17:11:39.842529 #9745]  INFO -- : Edning example: ExpenseTracker::API POST /expenses when the expense fails validateion responds with a 422 (Unprocessable entity)
+I, [2020-03-17T17:11:39.842542 #9745]  INFO -- : Edning example: ExpenseTracker::API POST /expenses when the expense fails validateion responds with a 422 (Unprocessable entity)
+I, [2020-03-17T17:11:39.842555 #9745]  INFO -- : Edning example: ExpenseTracker::API POST /expenses when the expense fails validateion responds with a 422 (Unprocessable entity)
+I, [2020-03-17T17:11:39.842568 #9745]  INFO -- : Edning example: ExpenseTracker::API POST /expenses when the expense fails validateion responds with a 422 (Unprocessable entity)
+I, [2020-03-17T17:11:39.842581 #9745]  INFO -- : Edning example: ExpenseTracker::API POST /expenses when the expense fails validateion responds with a 422 (Unprocessable entity)
+I, [2020-03-17T17:11:39.842594 #9745]  INFO -- : Edning example: ExpenseTracker::API POST /expenses when the expense fails validateion responds with a 422 (Unprocessable entity)
+I, [2020-03-17T17:11:39.842607 #9745]  INFO -- : Edning example: ExpenseTracker::API POST /expenses when the expense fails validateion responds with a 422 (Unprocessable entity)
+I, [2020-03-17T17:11:39.842620 #9745]  INFO -- : Edning example: ExpenseTracker::API POST /expenses when the expense fails validateion responds with a 422 (Unprocessable entity)
+I, [2020-03-17T17:11:39.842633 #9745]  INFO -- : Edning example: ExpenseTracker::API POST /expenses when the expense fails validateion responds with a 422 (Unprocessable entity)
+I, [2020-03-17T17:11:39.842646 #9745]  INFO -- : Edning example: ExpenseTracker::API POST /expenses when the expense fails validateion responds with a 422 (Unprocessable entity)
+I, [2020-03-17T17:11:39.842659 #9745]  INFO -- : Edning example: ExpenseTracker::API POST /expenses when the expense fails validateion responds with a 422 (Unprocessable entity)
+I, [2020-03-17T17:11:39.842892 #9745]  INFO -- : Starting example: ExpenseTracker::API POST /expenses when the expense fails validateion return an error message
+I, [2020-03-17T17:11:39.842935 #9745]  INFO -- : Starting example: ExpenseTracker::API POST /expenses when the expense fails validateion return an error message
+I, [2020-03-17T17:11:39.842954 #9745]  INFO -- : Starting example: ExpenseTracker::API POST /expenses when the expense fails validateion return an error message
+I, [2020-03-17T17:11:39.842991 #9745]  INFO -- : Starting example: ExpenseTracker::API POST /expenses when the expense fails validateion return an error message
+I, [2020-03-17T17:11:39.843007 #9745]  INFO -- : Starting example: ExpenseTracker::API POST /expenses when the expense fails validateion return an error message
+I, [2020-03-17T17:11:39.843020 #9745]  INFO -- : Starting example: ExpenseTracker::API POST /expenses when the expense fails validateion return an error message
+I, [2020-03-17T17:11:39.843034 #9745]  INFO -- : Starting example: ExpenseTracker::API POST /expenses when the expense fails validateion return an error message
+I, [2020-03-17T17:11:39.843047 #9745]  INFO -- : Starting example: ExpenseTracker::API POST /expenses when the expense fails validateion return an error message
+I, [2020-03-17T17:11:39.843060 #9745]  INFO -- : Starting example: ExpenseTracker::API POST /expenses when the expense fails validateion return an error message
+I, [2020-03-17T17:11:39.843072 #9745]  INFO -- : Starting example: ExpenseTracker::API POST /expenses when the expense fails validateion return an error message
+I, [2020-03-17T17:11:39.843088 #9745]  INFO -- : Starting example: ExpenseTracker::API POST /expenses when the expense fails validateion return an error message
+I, [2020-03-17T17:11:39.843102 #9745]  INFO -- : Starting example: ExpenseTracker::API POST /expenses when the expense fails validateion return an error message
+I, [2020-03-17T17:11:39.843115 #9745]  INFO -- : Starting example: ExpenseTracker::API POST /expenses when the expense fails validateion return an error message
+I, [2020-03-17T17:11:39.843128 #9745]  INFO -- : Starting example: ExpenseTracker::API POST /expenses when the expense fails validateion return an error message
+I, [2020-03-17T17:11:39.843141 #9745]  INFO -- : Starting example: ExpenseTracker::API POST /expenses when the expense fails validateion return an error message
+I, [2020-03-17T17:11:39.843153 #9745]  INFO -- : Starting example: ExpenseTracker::API POST /expenses when the expense fails validateion return an error message
+I, [2020-03-17T17:11:39.843166 #9745]  INFO -- : Starting example: ExpenseTracker::API POST /expenses when the expense fails validateion return an error message
+I, [2020-03-17T17:11:39.843178 #9745]  INFO -- : Starting example: ExpenseTracker::API POST /expenses when the expense fails validateion return an error message
+I, [2020-03-17T17:11:39.843191 #9745]  INFO -- : Starting example: ExpenseTracker::API POST /expenses when the expense fails validateion return an error message
+I, [2020-03-17T17:11:39.843204 #9745]  INFO -- : Starting example: ExpenseTracker::API POST /expenses when the expense fails validateion return an error message
+I, [2020-03-17T17:11:39.843216 #9745]  INFO -- : Starting example: ExpenseTracker::API POST /expenses when the expense fails validateion return an error message
+I, [2020-03-17T17:11:39.843232 #9745]  INFO -- : Starting example: ExpenseTracker::API POST /expenses when the expense fails validateion return an error message
+I, [2020-03-17T17:11:39.843245 #9745]  INFO -- : Starting example: ExpenseTracker::API POST /expenses when the expense fails validateion return an error message
+I, [2020-03-17T17:11:39.843258 #9745]  INFO -- : Starting example: ExpenseTracker::API POST /expenses when the expense fails validateion return an error message
+I, [2020-03-17T17:11:39.844021 #9745]  INFO -- : Edning example: ExpenseTracker::API POST /expenses when the expense fails validateion return an error message
+I, [2020-03-17T17:11:39.844052 #9745]  INFO -- : Edning example: ExpenseTracker::API POST /expenses when the expense fails validateion return an error message
+I, [2020-03-17T17:11:39.844086 #9745]  INFO -- : Edning example: ExpenseTracker::API POST /expenses when the expense fails validateion return an error message
+I, [2020-03-17T17:11:39.844103 #9745]  INFO -- : Edning example: ExpenseTracker::API POST /expenses when the expense fails validateion return an error message
+I, [2020-03-17T17:11:39.844117 #9745]  INFO -- : Edning example: ExpenseTracker::API POST /expenses when the expense fails validateion return an error message
+I, [2020-03-17T17:11:39.844130 #9745]  INFO -- : Edning example: ExpenseTracker::API POST /expenses when the expense fails validateion return an error message
+I, [2020-03-17T17:11:39.844143 #9745]  INFO -- : Edning example: ExpenseTracker::API POST /expenses when the expense fails validateion return an error message
+I, [2020-03-17T17:11:39.844156 #9745]  INFO -- : Edning example: ExpenseTracker::API POST /expenses when the expense fails validateion return an error message
+I, [2020-03-17T17:11:39.844168 #9745]  INFO -- : Edning example: ExpenseTracker::API POST /expenses when the expense fails validateion return an error message
+I, [2020-03-17T17:11:39.844181 #9745]  INFO -- : Edning example: ExpenseTracker::API POST /expenses when the expense fails validateion return an error message
+I, [2020-03-17T17:11:39.844194 #9745]  INFO -- : Edning example: ExpenseTracker::API POST /expenses when the expense fails validateion return an error message
+I, [2020-03-17T17:11:39.844211 #9745]  INFO -- : Edning example: ExpenseTracker::API POST /expenses when the expense fails validateion return an error message
+I, [2020-03-17T17:11:39.844224 #9745]  INFO -- : Edning example: ExpenseTracker::API POST /expenses when the expense fails validateion return an error message
+I, [2020-03-17T17:11:39.844237 #9745]  INFO -- : Edning example: ExpenseTracker::API POST /expenses when the expense fails validateion return an error message
+I, [2020-03-17T17:11:39.844250 #9745]  INFO -- : Edning example: ExpenseTracker::API POST /expenses when the expense fails validateion return an error message
+I, [2020-03-17T17:11:39.844262 #9745]  INFO -- : Edning example: ExpenseTracker::API POST /expenses when the expense fails validateion return an error message
+I, [2020-03-17T17:11:39.844275 #9745]  INFO -- : Edning example: ExpenseTracker::API POST /expenses when the expense fails validateion return an error message
+I, [2020-03-17T17:11:39.844287 #9745]  INFO -- : Edning example: ExpenseTracker::API POST /expenses when the expense fails validateion return an error message
+I, [2020-03-17T17:11:39.844300 #9745]  INFO -- : Edning example: ExpenseTracker::API POST /expenses when the expense fails validateion return an error message
+I, [2020-03-17T17:11:39.844312 #9745]  INFO -- : Edning example: ExpenseTracker::API POST /expenses when the expense fails validateion return an error message
+I, [2020-03-17T17:11:39.844325 #9745]  INFO -- : Edning example: ExpenseTracker::API POST /expenses when the expense fails validateion return an error message
+I, [2020-03-17T17:11:39.844340 #9745]  INFO -- : Edning example: ExpenseTracker::API POST /expenses when the expense fails validateion return an error message
+I, [2020-03-17T17:11:39.844353 #9745]  INFO -- : Edning example: ExpenseTracker::API POST /expenses when the expense fails validateion return an error message
+I, [2020-03-17T17:11:39.844366 #9745]  INFO -- : Edning example: ExpenseTracker::API POST /expenses when the expense fails validateion return an error message
+I, [2020-03-17T17:11:39.844378 #9745]  INFO -- : Edning example: ExpenseTracker::API POST /expenses when the expense fails validateion return an error message
+I, [2020-03-17T17:11:39.844709 #9745]  INFO -- : (0.000029s) BEGIN
+I, [2020-03-17T17:11:39.844737 #9745]  INFO -- : (0.000029s) BEGIN
+I, [2020-03-17T17:11:39.844752 #9745]  INFO -- : (0.000029s) BEGIN
+I, [2020-03-17T17:11:39.844765 #9745]  INFO -- : (0.000029s) BEGIN
+I, [2020-03-17T17:11:39.844778 #9745]  INFO -- : (0.000029s) BEGIN
+I, [2020-03-17T17:11:39.844790 #9745]  INFO -- : (0.000029s) BEGIN
+I, [2020-03-17T17:11:39.844818 #9745]  INFO -- : (0.000029s) BEGIN
+I, [2020-03-17T17:11:39.844833 #9745]  INFO -- : (0.000029s) BEGIN
+I, [2020-03-17T17:11:39.844846 #9745]  INFO -- : (0.000029s) BEGIN
+I, [2020-03-17T17:11:39.844858 #9745]  INFO -- : (0.000029s) BEGIN
+I, [2020-03-17T17:11:39.844875 #9745]  INFO -- : (0.000029s) BEGIN
+I, [2020-03-17T17:11:39.844888 #9745]  INFO -- : (0.000029s) BEGIN
+I, [2020-03-17T17:11:39.844901 #9745]  INFO -- : (0.000029s) BEGIN
+I, [2020-03-17T17:11:39.844913 #9745]  INFO -- : (0.000029s) BEGIN
+I, [2020-03-17T17:11:39.844925 #9745]  INFO -- : (0.000029s) BEGIN
+I, [2020-03-17T17:11:39.844937 #9745]  INFO -- : (0.000029s) BEGIN
+I, [2020-03-17T17:11:39.844949 #9745]  INFO -- : (0.000029s) BEGIN
+I, [2020-03-17T17:11:39.844962 #9745]  INFO -- : (0.000029s) BEGIN
+I, [2020-03-17T17:11:39.844974 #9745]  INFO -- : (0.000029s) BEGIN
+I, [2020-03-17T17:11:39.844986 #9745]  INFO -- : (0.000029s) BEGIN
+I, [2020-03-17T17:11:39.844998 #9745]  INFO -- : (0.000029s) BEGIN
+I, [2020-03-17T17:11:39.845010 #9745]  INFO -- : (0.000029s) BEGIN
+I, [2020-03-17T17:11:39.845022 #9745]  INFO -- : (0.000029s) BEGIN
+I, [2020-03-17T17:11:39.845034 #9745]  INFO -- : (0.000029s) BEGIN
+I, [2020-03-17T17:11:39.845046 #9745]  INFO -- : (0.000029s) BEGIN
+I, [2020-03-17T17:11:39.845136 #9745]  INFO -- : Starting example: Expense Tracker API record submitted expenses
+I, [2020-03-17T17:11:39.845159 #9745]  INFO -- : Starting example: Expense Tracker API record submitted expenses
+I, [2020-03-17T17:11:39.845173 #9745]  INFO -- : Starting example: Expense Tracker API record submitted expenses
+I, [2020-03-17T17:11:39.845185 #9745]  INFO -- : Starting example: Expense Tracker API record submitted expenses
+I, [2020-03-17T17:11:39.845197 #9745]  INFO -- : Starting example: Expense Tracker API record submitted expenses
+I, [2020-03-17T17:11:39.845209 #9745]  INFO -- : Starting example: Expense Tracker API record submitted expenses
+I, [2020-03-17T17:11:39.845222 #9745]  INFO -- : Starting example: Expense Tracker API record submitted expenses
+I, [2020-03-17T17:11:39.845234 #9745]  INFO -- : Starting example: Expense Tracker API record submitted expenses
+I, [2020-03-17T17:11:39.845246 #9745]  INFO -- : Starting example: Expense Tracker API record submitted expenses
+I, [2020-03-17T17:11:39.845258 #9745]  INFO -- : Starting example: Expense Tracker API record submitted expenses
+I, [2020-03-17T17:11:39.845270 #9745]  INFO -- : Starting example: Expense Tracker API record submitted expenses
+I, [2020-03-17T17:11:39.845283 #9745]  INFO -- : Starting example: Expense Tracker API record submitted expenses
+I, [2020-03-17T17:11:39.845295 #9745]  INFO -- : Starting example: Expense Tracker API record submitted expenses
+I, [2020-03-17T17:11:39.845307 #9745]  INFO -- : Starting example: Expense Tracker API record submitted expenses
+I, [2020-03-17T17:11:39.845324 #9745]  INFO -- : Starting example: Expense Tracker API record submitted expenses
+I, [2020-03-17T17:11:39.845337 #9745]  INFO -- : Starting example: Expense Tracker API record submitted expenses
+I, [2020-03-17T17:11:39.845349 #9745]  INFO -- : Starting example: Expense Tracker API record submitted expenses
+I, [2020-03-17T17:11:39.845361 #9745]  INFO -- : Starting example: Expense Tracker API record submitted expenses
+I, [2020-03-17T17:11:39.845374 #9745]  INFO -- : Starting example: Expense Tracker API record submitted expenses
+I, [2020-03-17T17:11:39.845386 #9745]  INFO -- : Starting example: Expense Tracker API record submitted expenses
+I, [2020-03-17T17:11:39.845398 #9745]  INFO -- : Starting example: Expense Tracker API record submitted expenses
+I, [2020-03-17T17:11:39.845411 #9745]  INFO -- : Starting example: Expense Tracker API record submitted expenses
+I, [2020-03-17T17:11:39.845423 #9745]  INFO -- : Starting example: Expense Tracker API record submitted expenses
+I, [2020-03-17T17:11:39.845435 #9745]  INFO -- : Starting example: Expense Tracker API record submitted expenses
+I, [2020-03-17T17:11:39.845447 #9745]  INFO -- : Starting example: Expense Tracker API record submitted expenses
+I, [2020-03-17T17:11:39.845474 #9745]  INFO -- : Starting example: Expense Tracker API record submitted expenses
+I, [2020-03-17T17:11:39.846197 #9745]  INFO -- : (0.000286s) INSERT INTO `expenses` (`payee`, `amount`, `date`) VALUES ('Starbucks', 5.75, '2017-06-10')
+I, [2020-03-17T17:11:39.846224 #9745]  INFO -- : (0.000286s) INSERT INTO `expenses` (`payee`, `amount`, `date`) VALUES ('Starbucks', 5.75, '2017-06-10')
+I, [2020-03-17T17:11:39.846241 #9745]  INFO -- : (0.000286s) INSERT INTO `expenses` (`payee`, `amount`, `date`) VALUES ('Starbucks', 5.75, '2017-06-10')
+I, [2020-03-17T17:11:39.846255 #9745]  INFO -- : (0.000286s) INSERT INTO `expenses` (`payee`, `amount`, `date`) VALUES ('Starbucks', 5.75, '2017-06-10')
+I, [2020-03-17T17:11:39.846268 #9745]  INFO -- : (0.000286s) INSERT INTO `expenses` (`payee`, `amount`, `date`) VALUES ('Starbucks', 5.75, '2017-06-10')
+I, [2020-03-17T17:11:39.846281 #9745]  INFO -- : (0.000286s) INSERT INTO `expenses` (`payee`, `amount`, `date`) VALUES ('Starbucks', 5.75, '2017-06-10')
+I, [2020-03-17T17:11:39.846294 #9745]  INFO -- : (0.000286s) INSERT INTO `expenses` (`payee`, `amount`, `date`) VALUES ('Starbucks', 5.75, '2017-06-10')
+I, [2020-03-17T17:11:39.846307 #9745]  INFO -- : (0.000286s) INSERT INTO `expenses` (`payee`, `amount`, `date`) VALUES ('Starbucks', 5.75, '2017-06-10')
+I, [2020-03-17T17:11:39.846319 #9745]  INFO -- : (0.000286s) INSERT INTO `expenses` (`payee`, `amount`, `date`) VALUES ('Starbucks', 5.75, '2017-06-10')
+I, [2020-03-17T17:11:39.846332 #9745]  INFO -- : (0.000286s) INSERT INTO `expenses` (`payee`, `amount`, `date`) VALUES ('Starbucks', 5.75, '2017-06-10')
+I, [2020-03-17T17:11:39.846345 #9745]  INFO -- : (0.000286s) INSERT INTO `expenses` (`payee`, `amount`, `date`) VALUES ('Starbucks', 5.75, '2017-06-10')
+I, [2020-03-17T17:11:39.846362 #9745]  INFO -- : (0.000286s) INSERT INTO `expenses` (`payee`, `amount`, `date`) VALUES ('Starbucks', 5.75, '2017-06-10')
+I, [2020-03-17T17:11:39.846376 #9745]  INFO -- : (0.000286s) INSERT INTO `expenses` (`payee`, `amount`, `date`) VALUES ('Starbucks', 5.75, '2017-06-10')
+I, [2020-03-17T17:11:39.846389 #9745]  INFO -- : (0.000286s) INSERT INTO `expenses` (`payee`, `amount`, `date`) VALUES ('Starbucks', 5.75, '2017-06-10')
+I, [2020-03-17T17:11:39.846401 #9745]  INFO -- : (0.000286s) INSERT INTO `expenses` (`payee`, `amount`, `date`) VALUES ('Starbucks', 5.75, '2017-06-10')
+I, [2020-03-17T17:11:39.846414 #9745]  INFO -- : (0.000286s) INSERT INTO `expenses` (`payee`, `amount`, `date`) VALUES ('Starbucks', 5.75, '2017-06-10')
+I, [2020-03-17T17:11:39.846427 #9745]  INFO -- : (0.000286s) INSERT INTO `expenses` (`payee`, `amount`, `date`) VALUES ('Starbucks', 5.75, '2017-06-10')
+I, [2020-03-17T17:11:39.846439 #9745]  INFO -- : (0.000286s) INSERT INTO `expenses` (`payee`, `amount`, `date`) VALUES ('Starbucks', 5.75, '2017-06-10')
+I, [2020-03-17T17:11:39.846452 #9745]  INFO -- : (0.000286s) INSERT INTO `expenses` (`payee`, `amount`, `date`) VALUES ('Starbucks', 5.75, '2017-06-10')
+I, [2020-03-17T17:11:39.846465 #9745]  INFO -- : (0.000286s) INSERT INTO `expenses` (`payee`, `amount`, `date`) VALUES ('Starbucks', 5.75, '2017-06-10')
+I, [2020-03-17T17:11:39.846478 #9745]  INFO -- : (0.000286s) INSERT INTO `expenses` (`payee`, `amount`, `date`) VALUES ('Starbucks', 5.75, '2017-06-10')
+I, [2020-03-17T17:11:39.846494 #9745]  INFO -- : (0.000286s) INSERT INTO `expenses` (`payee`, `amount`, `date`) VALUES ('Starbucks', 5.75, '2017-06-10')
+I, [2020-03-17T17:11:39.846507 #9745]  INFO -- : (0.000286s) INSERT INTO `expenses` (`payee`, `amount`, `date`) VALUES ('Starbucks', 5.75, '2017-06-10')
+I, [2020-03-17T17:11:39.846520 #9745]  INFO -- : (0.000286s) INSERT INTO `expenses` (`payee`, `amount`, `date`) VALUES ('Starbucks', 5.75, '2017-06-10')
+I, [2020-03-17T17:11:39.846532 #9745]  INFO -- : (0.000286s) INSERT INTO `expenses` (`payee`, `amount`, `date`) VALUES ('Starbucks', 5.75, '2017-06-10')
+I, [2020-03-17T17:11:39.846545 #9745]  INFO -- : (0.000286s) INSERT INTO `expenses` (`payee`, `amount`, `date`) VALUES ('Starbucks', 5.75, '2017-06-10')
+I, [2020-03-17T17:11:39.846657 #9745]  INFO -- : (0.000064s) SELECT max(`id`) AS 'max' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.846681 #9745]  INFO -- : (0.000064s) SELECT max(`id`) AS 'max' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.846695 #9745]  INFO -- : (0.000064s) SELECT max(`id`) AS 'max' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.846708 #9745]  INFO -- : (0.000064s) SELECT max(`id`) AS 'max' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.846720 #9745]  INFO -- : (0.000064s) SELECT max(`id`) AS 'max' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.846733 #9745]  INFO -- : (0.000064s) SELECT max(`id`) AS 'max' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.846745 #9745]  INFO -- : (0.000064s) SELECT max(`id`) AS 'max' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.846762 #9745]  INFO -- : (0.000064s) SELECT max(`id`) AS 'max' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.846809 #9745]  INFO -- : (0.000064s) SELECT max(`id`) AS 'max' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.846822 #9745]  INFO -- : (0.000064s) SELECT max(`id`) AS 'max' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.846835 #9745]  INFO -- : (0.000064s) SELECT max(`id`) AS 'max' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.846847 #9745]  INFO -- : (0.000064s) SELECT max(`id`) AS 'max' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.846860 #9745]  INFO -- : (0.000064s) SELECT max(`id`) AS 'max' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.846872 #9745]  INFO -- : (0.000064s) SELECT max(`id`) AS 'max' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.846884 #9745]  INFO -- : (0.000064s) SELECT max(`id`) AS 'max' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.846896 #9745]  INFO -- : (0.000064s) SELECT max(`id`) AS 'max' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.846909 #9745]  INFO -- : (0.000064s) SELECT max(`id`) AS 'max' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.846921 #9745]  INFO -- : (0.000064s) SELECT max(`id`) AS 'max' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.846933 #9745]  INFO -- : (0.000064s) SELECT max(`id`) AS 'max' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.846945 #9745]  INFO -- : (0.000064s) SELECT max(`id`) AS 'max' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.846958 #9745]  INFO -- : (0.000064s) SELECT max(`id`) AS 'max' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.846973 #9745]  INFO -- : (0.000064s) SELECT max(`id`) AS 'max' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.846986 #9745]  INFO -- : (0.000064s) SELECT max(`id`) AS 'max' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.846998 #9745]  INFO -- : (0.000064s) SELECT max(`id`) AS 'max' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.847011 #9745]  INFO -- : (0.000064s) SELECT max(`id`) AS 'max' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.847023 #9745]  INFO -- : (0.000064s) SELECT max(`id`) AS 'max' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.848005 #9745]  INFO -- : (0.000032s) INSERT INTO `expenses` (`payee`, `amount`, `date`) VALUES ('Zoo', 15.25, '2017-06-10')
+I, [2020-03-17T17:11:39.848038 #9745]  INFO -- : (0.000032s) INSERT INTO `expenses` (`payee`, `amount`, `date`) VALUES ('Zoo', 15.25, '2017-06-10')
+I, [2020-03-17T17:11:39.848119 #9745]  INFO -- : (0.000032s) INSERT INTO `expenses` (`payee`, `amount`, `date`) VALUES ('Zoo', 15.25, '2017-06-10')
+I, [2020-03-17T17:11:39.848148 #9745]  INFO -- : (0.000032s) INSERT INTO `expenses` (`payee`, `amount`, `date`) VALUES ('Zoo', 15.25, '2017-06-10')
+I, [2020-03-17T17:11:39.848168 #9745]  INFO -- : (0.000032s) INSERT INTO `expenses` (`payee`, `amount`, `date`) VALUES ('Zoo', 15.25, '2017-06-10')
+I, [2020-03-17T17:11:39.848182 #9745]  INFO -- : (0.000032s) INSERT INTO `expenses` (`payee`, `amount`, `date`) VALUES ('Zoo', 15.25, '2017-06-10')
+I, [2020-03-17T17:11:39.848195 #9745]  INFO -- : (0.000032s) INSERT INTO `expenses` (`payee`, `amount`, `date`) VALUES ('Zoo', 15.25, '2017-06-10')
+I, [2020-03-17T17:11:39.848208 #9745]  INFO -- : (0.000032s) INSERT INTO `expenses` (`payee`, `amount`, `date`) VALUES ('Zoo', 15.25, '2017-06-10')
+I, [2020-03-17T17:11:39.848224 #9745]  INFO -- : (0.000032s) INSERT INTO `expenses` (`payee`, `amount`, `date`) VALUES ('Zoo', 15.25, '2017-06-10')
+I, [2020-03-17T17:11:39.848238 #9745]  INFO -- : (0.000032s) INSERT INTO `expenses` (`payee`, `amount`, `date`) VALUES ('Zoo', 15.25, '2017-06-10')
+I, [2020-03-17T17:11:39.848252 #9745]  INFO -- : (0.000032s) INSERT INTO `expenses` (`payee`, `amount`, `date`) VALUES ('Zoo', 15.25, '2017-06-10')
+I, [2020-03-17T17:11:39.848265 #9745]  INFO -- : (0.000032s) INSERT INTO `expenses` (`payee`, `amount`, `date`) VALUES ('Zoo', 15.25, '2017-06-10')
+I, [2020-03-17T17:11:39.848278 #9745]  INFO -- : (0.000032s) INSERT INTO `expenses` (`payee`, `amount`, `date`) VALUES ('Zoo', 15.25, '2017-06-10')
+I, [2020-03-17T17:11:39.848291 #9745]  INFO -- : (0.000032s) INSERT INTO `expenses` (`payee`, `amount`, `date`) VALUES ('Zoo', 15.25, '2017-06-10')
+I, [2020-03-17T17:11:39.848303 #9745]  INFO -- : (0.000032s) INSERT INTO `expenses` (`payee`, `amount`, `date`) VALUES ('Zoo', 15.25, '2017-06-10')
+I, [2020-03-17T17:11:39.848316 #9745]  INFO -- : (0.000032s) INSERT INTO `expenses` (`payee`, `amount`, `date`) VALUES ('Zoo', 15.25, '2017-06-10')
+I, [2020-03-17T17:11:39.848329 #9745]  INFO -- : (0.000032s) INSERT INTO `expenses` (`payee`, `amount`, `date`) VALUES ('Zoo', 15.25, '2017-06-10')
+I, [2020-03-17T17:11:39.848342 #9745]  INFO -- : (0.000032s) INSERT INTO `expenses` (`payee`, `amount`, `date`) VALUES ('Zoo', 15.25, '2017-06-10')
+I, [2020-03-17T17:11:39.848354 #9745]  INFO -- : (0.000032s) INSERT INTO `expenses` (`payee`, `amount`, `date`) VALUES ('Zoo', 15.25, '2017-06-10')
+I, [2020-03-17T17:11:39.848367 #9745]  INFO -- : (0.000032s) INSERT INTO `expenses` (`payee`, `amount`, `date`) VALUES ('Zoo', 15.25, '2017-06-10')
+I, [2020-03-17T17:11:39.848380 #9745]  INFO -- : (0.000032s) INSERT INTO `expenses` (`payee`, `amount`, `date`) VALUES ('Zoo', 15.25, '2017-06-10')
+I, [2020-03-17T17:11:39.848392 #9745]  INFO -- : (0.000032s) INSERT INTO `expenses` (`payee`, `amount`, `date`) VALUES ('Zoo', 15.25, '2017-06-10')
+I, [2020-03-17T17:11:39.848405 #9745]  INFO -- : (0.000032s) INSERT INTO `expenses` (`payee`, `amount`, `date`) VALUES ('Zoo', 15.25, '2017-06-10')
+I, [2020-03-17T17:11:39.848418 #9745]  INFO -- : (0.000032s) INSERT INTO `expenses` (`payee`, `amount`, `date`) VALUES ('Zoo', 15.25, '2017-06-10')
+I, [2020-03-17T17:11:39.848431 #9745]  INFO -- : (0.000032s) INSERT INTO `expenses` (`payee`, `amount`, `date`) VALUES ('Zoo', 15.25, '2017-06-10')
+I, [2020-03-17T17:11:39.848443 #9745]  INFO -- : (0.000032s) INSERT INTO `expenses` (`payee`, `amount`, `date`) VALUES ('Zoo', 15.25, '2017-06-10')
+I, [2020-03-17T17:11:39.848535 #9745]  INFO -- : (0.000050s) SELECT max(`id`) AS 'max' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.848558 #9745]  INFO -- : (0.000050s) SELECT max(`id`) AS 'max' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.848572 #9745]  INFO -- : (0.000050s) SELECT max(`id`) AS 'max' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.848585 #9745]  INFO -- : (0.000050s) SELECT max(`id`) AS 'max' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.848598 #9745]  INFO -- : (0.000050s) SELECT max(`id`) AS 'max' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.848611 #9745]  INFO -- : (0.000050s) SELECT max(`id`) AS 'max' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.848623 #9745]  INFO -- : (0.000050s) SELECT max(`id`) AS 'max' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.848636 #9745]  INFO -- : (0.000050s) SELECT max(`id`) AS 'max' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.848649 #9745]  INFO -- : (0.000050s) SELECT max(`id`) AS 'max' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.848662 #9745]  INFO -- : (0.000050s) SELECT max(`id`) AS 'max' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.848674 #9745]  INFO -- : (0.000050s) SELECT max(`id`) AS 'max' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.848687 #9745]  INFO -- : (0.000050s) SELECT max(`id`) AS 'max' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.848699 #9745]  INFO -- : (0.000050s) SELECT max(`id`) AS 'max' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.848713 #9745]  INFO -- : (0.000050s) SELECT max(`id`) AS 'max' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.848726 #9745]  INFO -- : (0.000050s) SELECT max(`id`) AS 'max' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.848748 #9745]  INFO -- : (0.000050s) SELECT max(`id`) AS 'max' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.848761 #9745]  INFO -- : (0.000050s) SELECT max(`id`) AS 'max' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.848774 #9745]  INFO -- : (0.000050s) SELECT max(`id`) AS 'max' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.848787 #9745]  INFO -- : (0.000050s) SELECT max(`id`) AS 'max' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.848806 #9745]  INFO -- : (0.000050s) SELECT max(`id`) AS 'max' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.848820 #9745]  INFO -- : (0.000050s) SELECT max(`id`) AS 'max' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.848833 #9745]  INFO -- : (0.000050s) SELECT max(`id`) AS 'max' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.848846 #9745]  INFO -- : (0.000050s) SELECT max(`id`) AS 'max' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.848859 #9745]  INFO -- : (0.000050s) SELECT max(`id`) AS 'max' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.848872 #9745]  INFO -- : (0.000050s) SELECT max(`id`) AS 'max' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.848886 #9745]  INFO -- : (0.000050s) SELECT max(`id`) AS 'max' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.849501 #9745]  INFO -- : (0.000052s) INSERT INTO `expenses` (`payee`, `amount`, `date`) VALUES ('Whole Foods', 95.2, '2017-06-11')
+I, [2020-03-17T17:11:39.849551 #9745]  INFO -- : (0.000052s) INSERT INTO `expenses` (`payee`, `amount`, `date`) VALUES ('Whole Foods', 95.2, '2017-06-11')
+I, [2020-03-17T17:11:39.849574 #9745]  INFO -- : (0.000052s) INSERT INTO `expenses` (`payee`, `amount`, `date`) VALUES ('Whole Foods', 95.2, '2017-06-11')
+I, [2020-03-17T17:11:39.849591 #9745]  INFO -- : (0.000052s) INSERT INTO `expenses` (`payee`, `amount`, `date`) VALUES ('Whole Foods', 95.2, '2017-06-11')
+I, [2020-03-17T17:11:39.849605 #9745]  INFO -- : (0.000052s) INSERT INTO `expenses` (`payee`, `amount`, `date`) VALUES ('Whole Foods', 95.2, '2017-06-11')
+I, [2020-03-17T17:11:39.849620 #9745]  INFO -- : (0.000052s) INSERT INTO `expenses` (`payee`, `amount`, `date`) VALUES ('Whole Foods', 95.2, '2017-06-11')
+I, [2020-03-17T17:11:39.849634 #9745]  INFO -- : (0.000052s) INSERT INTO `expenses` (`payee`, `amount`, `date`) VALUES ('Whole Foods', 95.2, '2017-06-11')
+I, [2020-03-17T17:11:39.849649 #9745]  INFO -- : (0.000052s) INSERT INTO `expenses` (`payee`, `amount`, `date`) VALUES ('Whole Foods', 95.2, '2017-06-11')
+I, [2020-03-17T17:11:39.849663 #9745]  INFO -- : (0.000052s) INSERT INTO `expenses` (`payee`, `amount`, `date`) VALUES ('Whole Foods', 95.2, '2017-06-11')
+I, [2020-03-17T17:11:39.849678 #9745]  INFO -- : (0.000052s) INSERT INTO `expenses` (`payee`, `amount`, `date`) VALUES ('Whole Foods', 95.2, '2017-06-11')
+I, [2020-03-17T17:11:39.849692 #9745]  INFO -- : (0.000052s) INSERT INTO `expenses` (`payee`, `amount`, `date`) VALUES ('Whole Foods', 95.2, '2017-06-11')
+I, [2020-03-17T17:11:39.849706 #9745]  INFO -- : (0.000052s) INSERT INTO `expenses` (`payee`, `amount`, `date`) VALUES ('Whole Foods', 95.2, '2017-06-11')
+I, [2020-03-17T17:11:39.849720 #9745]  INFO -- : (0.000052s) INSERT INTO `expenses` (`payee`, `amount`, `date`) VALUES ('Whole Foods', 95.2, '2017-06-11')
+I, [2020-03-17T17:11:39.849735 #9745]  INFO -- : (0.000052s) INSERT INTO `expenses` (`payee`, `amount`, `date`) VALUES ('Whole Foods', 95.2, '2017-06-11')
+I, [2020-03-17T17:11:39.849749 #9745]  INFO -- : (0.000052s) INSERT INTO `expenses` (`payee`, `amount`, `date`) VALUES ('Whole Foods', 95.2, '2017-06-11')
+I, [2020-03-17T17:11:39.849763 #9745]  INFO -- : (0.000052s) INSERT INTO `expenses` (`payee`, `amount`, `date`) VALUES ('Whole Foods', 95.2, '2017-06-11')
+I, [2020-03-17T17:11:39.849777 #9745]  INFO -- : (0.000052s) INSERT INTO `expenses` (`payee`, `amount`, `date`) VALUES ('Whole Foods', 95.2, '2017-06-11')
+I, [2020-03-17T17:11:39.849795 #9745]  INFO -- : (0.000052s) INSERT INTO `expenses` (`payee`, `amount`, `date`) VALUES ('Whole Foods', 95.2, '2017-06-11')
+I, [2020-03-17T17:11:39.849810 #9745]  INFO -- : (0.000052s) INSERT INTO `expenses` (`payee`, `amount`, `date`) VALUES ('Whole Foods', 95.2, '2017-06-11')
+I, [2020-03-17T17:11:39.849825 #9745]  INFO -- : (0.000052s) INSERT INTO `expenses` (`payee`, `amount`, `date`) VALUES ('Whole Foods', 95.2, '2017-06-11')
+I, [2020-03-17T17:11:39.849839 #9745]  INFO -- : (0.000052s) INSERT INTO `expenses` (`payee`, `amount`, `date`) VALUES ('Whole Foods', 95.2, '2017-06-11')
+I, [2020-03-17T17:11:39.849853 #9745]  INFO -- : (0.000052s) INSERT INTO `expenses` (`payee`, `amount`, `date`) VALUES ('Whole Foods', 95.2, '2017-06-11')
+I, [2020-03-17T17:11:39.849867 #9745]  INFO -- : (0.000052s) INSERT INTO `expenses` (`payee`, `amount`, `date`) VALUES ('Whole Foods', 95.2, '2017-06-11')
+I, [2020-03-17T17:11:39.849882 #9745]  INFO -- : (0.000052s) INSERT INTO `expenses` (`payee`, `amount`, `date`) VALUES ('Whole Foods', 95.2, '2017-06-11')
+I, [2020-03-17T17:11:39.849896 #9745]  INFO -- : (0.000052s) INSERT INTO `expenses` (`payee`, `amount`, `date`) VALUES ('Whole Foods', 95.2, '2017-06-11')
+I, [2020-03-17T17:11:39.849910 #9745]  INFO -- : (0.000052s) INSERT INTO `expenses` (`payee`, `amount`, `date`) VALUES ('Whole Foods', 95.2, '2017-06-11')
+I, [2020-03-17T17:11:39.850012 #9745]  INFO -- : (0.000058s) SELECT max(`id`) AS 'max' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.850037 #9745]  INFO -- : (0.000058s) SELECT max(`id`) AS 'max' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.850053 #9745]  INFO -- : (0.000058s) SELECT max(`id`) AS 'max' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.850067 #9745]  INFO -- : (0.000058s) SELECT max(`id`) AS 'max' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.850081 #9745]  INFO -- : (0.000058s) SELECT max(`id`) AS 'max' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.850094 #9745]  INFO -- : (0.000058s) SELECT max(`id`) AS 'max' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.850107 #9745]  INFO -- : (0.000058s) SELECT max(`id`) AS 'max' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.850120 #9745]  INFO -- : (0.000058s) SELECT max(`id`) AS 'max' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.850134 #9745]  INFO -- : (0.000058s) SELECT max(`id`) AS 'max' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.850147 #9745]  INFO -- : (0.000058s) SELECT max(`id`) AS 'max' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.850161 #9745]  INFO -- : (0.000058s) SELECT max(`id`) AS 'max' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.850174 #9745]  INFO -- : (0.000058s) SELECT max(`id`) AS 'max' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.850187 #9745]  INFO -- : (0.000058s) SELECT max(`id`) AS 'max' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.850200 #9745]  INFO -- : (0.000058s) SELECT max(`id`) AS 'max' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.850214 #9745]  INFO -- : (0.000058s) SELECT max(`id`) AS 'max' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.850227 #9745]  INFO -- : (0.000058s) SELECT max(`id`) AS 'max' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.850240 #9745]  INFO -- : (0.000058s) SELECT max(`id`) AS 'max' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.850253 #9745]  INFO -- : (0.000058s) SELECT max(`id`) AS 'max' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.850267 #9745]  INFO -- : (0.000058s) SELECT max(`id`) AS 'max' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.850280 #9745]  INFO -- : (0.000058s) SELECT max(`id`) AS 'max' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.850293 #9745]  INFO -- : (0.000058s) SELECT max(`id`) AS 'max' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.850306 #9745]  INFO -- : (0.000058s) SELECT max(`id`) AS 'max' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.850320 #9745]  INFO -- : (0.000058s) SELECT max(`id`) AS 'max' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.850333 #9745]  INFO -- : (0.000058s) SELECT max(`id`) AS 'max' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.850346 #9745]  INFO -- : (0.000058s) SELECT max(`id`) AS 'max' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.850362 #9745]  INFO -- : (0.000058s) SELECT max(`id`) AS 'max' FROM `expenses` LIMIT 1
+I, [2020-03-17T17:11:39.850933 #9745]  INFO -- : (0.000094s) SELECT * FROM `expenses` WHERE (`date` = '2017-06-10')
+I, [2020-03-17T17:11:39.850977 #9745]  INFO -- : (0.000094s) SELECT * FROM `expenses` WHERE (`date` = '2017-06-10')
+I, [2020-03-17T17:11:39.851067 #9745]  INFO -- : (0.000094s) SELECT * FROM `expenses` WHERE (`date` = '2017-06-10')
+I, [2020-03-17T17:11:39.851091 #9745]  INFO -- : (0.000094s) SELECT * FROM `expenses` WHERE (`date` = '2017-06-10')
+I, [2020-03-17T17:11:39.851107 #9745]  INFO -- : (0.000094s) SELECT * FROM `expenses` WHERE (`date` = '2017-06-10')
+I, [2020-03-17T17:11:39.851121 #9745]  INFO -- : (0.000094s) SELECT * FROM `expenses` WHERE (`date` = '2017-06-10')
+I, [2020-03-17T17:11:39.851135 #9745]  INFO -- : (0.000094s) SELECT * FROM `expenses` WHERE (`date` = '2017-06-10')
+I, [2020-03-17T17:11:39.851148 #9745]  INFO -- : (0.000094s) SELECT * FROM `expenses` WHERE (`date` = '2017-06-10')
+I, [2020-03-17T17:11:39.851162 #9745]  INFO -- : (0.000094s) SELECT * FROM `expenses` WHERE (`date` = '2017-06-10')
+I, [2020-03-17T17:11:39.851175 #9745]  INFO -- : (0.000094s) SELECT * FROM `expenses` WHERE (`date` = '2017-06-10')
+I, [2020-03-17T17:11:39.851188 #9745]  INFO -- : (0.000094s) SELECT * FROM `expenses` WHERE (`date` = '2017-06-10')
+I, [2020-03-17T17:11:39.851201 #9745]  INFO -- : (0.000094s) SELECT * FROM `expenses` WHERE (`date` = '2017-06-10')
+I, [2020-03-17T17:11:39.851215 #9745]  INFO -- : (0.000094s) SELECT * FROM `expenses` WHERE (`date` = '2017-06-10')
+I, [2020-03-17T17:11:39.851228 #9745]  INFO -- : (0.000094s) SELECT * FROM `expenses` WHERE (`date` = '2017-06-10')
+I, [2020-03-17T17:11:39.851241 #9745]  INFO -- : (0.000094s) SELECT * FROM `expenses` WHERE (`date` = '2017-06-10')
+I, [2020-03-17T17:11:39.851254 #9745]  INFO -- : (0.000094s) SELECT * FROM `expenses` WHERE (`date` = '2017-06-10')
+I, [2020-03-17T17:11:39.851267 #9745]  INFO -- : (0.000094s) SELECT * FROM `expenses` WHERE (`date` = '2017-06-10')
+I, [2020-03-17T17:11:39.851280 #9745]  INFO -- : (0.000094s) SELECT * FROM `expenses` WHERE (`date` = '2017-06-10')
+I, [2020-03-17T17:11:39.851293 #9745]  INFO -- : (0.000094s) SELECT * FROM `expenses` WHERE (`date` = '2017-06-10')
+I, [2020-03-17T17:11:39.851306 #9745]  INFO -- : (0.000094s) SELECT * FROM `expenses` WHERE (`date` = '2017-06-10')
+I, [2020-03-17T17:11:39.851319 #9745]  INFO -- : (0.000094s) SELECT * FROM `expenses` WHERE (`date` = '2017-06-10')
+I, [2020-03-17T17:11:39.851332 #9745]  INFO -- : (0.000094s) SELECT * FROM `expenses` WHERE (`date` = '2017-06-10')
+I, [2020-03-17T17:11:39.851345 #9745]  INFO -- : (0.000094s) SELECT * FROM `expenses` WHERE (`date` = '2017-06-10')
+I, [2020-03-17T17:11:39.851358 #9745]  INFO -- : (0.000094s) SELECT * FROM `expenses` WHERE (`date` = '2017-06-10')
+I, [2020-03-17T17:11:39.851371 #9745]  INFO -- : (0.000094s) SELECT * FROM `expenses` WHERE (`date` = '2017-06-10')
+I, [2020-03-17T17:11:39.851384 #9745]  INFO -- : (0.000094s) SELECT * FROM `expenses` WHERE (`date` = '2017-06-10')
+I, [2020-03-17T17:11:39.851808 #9745]  INFO -- : Edning example: Expense Tracker API record submitted expenses
+I, [2020-03-17T17:11:39.851838 #9745]  INFO -- : Edning example: Expense Tracker API record submitted expenses
+I, [2020-03-17T17:11:39.851855 #9745]  INFO -- : Edning example: Expense Tracker API record submitted expenses
+I, [2020-03-17T17:11:39.851869 #9745]  INFO -- : Edning example: Expense Tracker API record submitted expenses
+I, [2020-03-17T17:11:39.851883 #9745]  INFO -- : Edning example: Expense Tracker API record submitted expenses
+I, [2020-03-17T17:11:39.851897 #9745]  INFO -- : Edning example: Expense Tracker API record submitted expenses
+I, [2020-03-17T17:11:39.851910 #9745]  INFO -- : Edning example: Expense Tracker API record submitted expenses
+I, [2020-03-17T17:11:39.851923 #9745]  INFO -- : Edning example: Expense Tracker API record submitted expenses
+I, [2020-03-17T17:11:39.851940 #9745]  INFO -- : Edning example: Expense Tracker API record submitted expenses
+I, [2020-03-17T17:11:39.851954 #9745]  INFO -- : Edning example: Expense Tracker API record submitted expenses
+I, [2020-03-17T17:11:39.851968 #9745]  INFO -- : Edning example: Expense Tracker API record submitted expenses
+I, [2020-03-17T17:11:39.851981 #9745]  INFO -- : Edning example: Expense Tracker API record submitted expenses
+I, [2020-03-17T17:11:39.851994 #9745]  INFO -- : Edning example: Expense Tracker API record submitted expenses
+I, [2020-03-17T17:11:39.852007 #9745]  INFO -- : Edning example: Expense Tracker API record submitted expenses
+I, [2020-03-17T17:11:39.852020 #9745]  INFO -- : Edning example: Expense Tracker API record submitted expenses
+I, [2020-03-17T17:11:39.852033 #9745]  INFO -- : Edning example: Expense Tracker API record submitted expenses
+I, [2020-03-17T17:11:39.852046 #9745]  INFO -- : Edning example: Expense Tracker API record submitted expenses
+I, [2020-03-17T17:11:39.852059 #9745]  INFO -- : Edning example: Expense Tracker API record submitted expenses
+I, [2020-03-17T17:11:39.852073 #9745]  INFO -- : Edning example: Expense Tracker API record submitted expenses
+I, [2020-03-17T17:11:39.852086 #9745]  INFO -- : Edning example: Expense Tracker API record submitted expenses
+I, [2020-03-17T17:11:39.852099 #9745]  INFO -- : Edning example: Expense Tracker API record submitted expenses
+I, [2020-03-17T17:11:39.852112 #9745]  INFO -- : Edning example: Expense Tracker API record submitted expenses
+I, [2020-03-17T17:11:39.852125 #9745]  INFO -- : Edning example: Expense Tracker API record submitted expenses
+I, [2020-03-17T17:11:39.852138 #9745]  INFO -- : Edning example: Expense Tracker API record submitted expenses
+I, [2020-03-17T17:11:39.852151 #9745]  INFO -- : Edning example: Expense Tracker API record submitted expenses
+I, [2020-03-17T17:11:39.852164 #9745]  INFO -- : Edning example: Expense Tracker API record submitted expenses
+I, [2020-03-17T17:11:39.852177 #9745]  INFO -- : Edning example: Expense Tracker API record submitted expenses
+I, [2020-03-17T17:11:39.852655 #9745]  INFO -- : (0.000427s) ROLLBACK
+I, [2020-03-17T17:11:39.852689 #9745]  INFO -- : (0.000427s) ROLLBACK
+I, [2020-03-17T17:11:39.852707 #9745]  INFO -- : (0.000427s) ROLLBACK
+I, [2020-03-17T17:11:39.852723 #9745]  INFO -- : (0.000427s) ROLLBACK
+I, [2020-03-17T17:11:39.852737 #9745]  INFO -- : (0.000427s) ROLLBACK
+I, [2020-03-17T17:11:39.852751 #9745]  INFO -- : (0.000427s) ROLLBACK
+I, [2020-03-17T17:11:39.852764 #9745]  INFO -- : (0.000427s) ROLLBACK
+I, [2020-03-17T17:11:39.852778 #9745]  INFO -- : (0.000427s) ROLLBACK
+I, [2020-03-17T17:11:39.852791 #9745]  INFO -- : (0.000427s) ROLLBACK
+I, [2020-03-17T17:11:39.852805 #9745]  INFO -- : (0.000427s) ROLLBACK
+I, [2020-03-17T17:11:39.852818 #9745]  INFO -- : (0.000427s) ROLLBACK
+I, [2020-03-17T17:11:39.852831 #9745]  INFO -- : (0.000427s) ROLLBACK
+I, [2020-03-17T17:11:39.852844 #9745]  INFO -- : (0.000427s) ROLLBACK
+I, [2020-03-17T17:11:39.852858 #9745]  INFO -- : (0.000427s) ROLLBACK
+I, [2020-03-17T17:11:39.852871 #9745]  INFO -- : (0.000427s) ROLLBACK
+I, [2020-03-17T17:11:39.852884 #9745]  INFO -- : (0.000427s) ROLLBACK
+I, [2020-03-17T17:11:39.852897 #9745]  INFO -- : (0.000427s) ROLLBACK
+I, [2020-03-17T17:11:39.852910 #9745]  INFO -- : (0.000427s) ROLLBACK
+I, [2020-03-17T17:11:39.852923 #9745]  INFO -- : (0.000427s) ROLLBACK
+I, [2020-03-17T17:11:39.852936 #9745]  INFO -- : (0.000427s) ROLLBACK
+I, [2020-03-17T17:11:39.852949 #9745]  INFO -- : (0.000427s) ROLLBACK
+I, [2020-03-17T17:11:39.852963 #9745]  INFO -- : (0.000427s) ROLLBACK
+I, [2020-03-17T17:11:39.852976 #9745]  INFO -- : (0.000427s) ROLLBACK
+I, [2020-03-17T17:11:39.852989 #9745]  INFO -- : (0.000427s) ROLLBACK
+I, [2020-03-17T17:11:39.853002 #9745]  INFO -- : (0.000427s) ROLLBACK
+I, [2020-03-17T17:11:39.853015 #9745]  INFO -- : (0.000427s) ROLLBACK
+I, [2020-03-17T17:11:39.853028 #9745]  INFO -- : (0.000427s) ROLLBACK
