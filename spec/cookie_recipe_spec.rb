@@ -9,6 +9,6 @@ end
 
 RSpec.describe CookieRecipe, '#ingredients' do
   subject { CookieRecipe.new.ingredients }
-  it { is_expected.to include(:butter, :milk, :eggs) }
-  it { is_expected.not_to include(:fish_oil) }
+  it { should include(:butter, :milk, :eggs) }
+  it { should_not include(:fish_oil) }
 end
