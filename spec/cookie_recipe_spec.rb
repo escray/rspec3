@@ -8,11 +8,11 @@ class CookieRecipe
 end
 
 RSpec.describe CookieRecipe, '#ingredients' do
-  it 'should include :butter, :milk and :eggs' do
+  specify
     expect(CookieRecipe.new.ingredients).to include(:butter, :milk, :eggs)
   end
 
-  it 'should not include :fish_oil' do
+  specify do
     expect(CookieRecipe.new.ingredients).not_to include(:fish_oil)
   end
 end
